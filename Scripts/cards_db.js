@@ -1,10 +1,10 @@
-var CARDS_DB = 
+var CARDS_DB =
 [
     {
         "Name": "Arrogance of Orichalcos",
         "Img": "arrogance_of_orichalcos",
         "Stars": 0,
-        "Type": "Spell (Quick Play)",
+        "Type": "Spell (Quick-Play)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -16,7 +16,7 @@ var CARDS_DB =
         "Name": "Attack Guidance Barrier",
         "Img": "attack_guidance_barrier",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -148,7 +148,7 @@ var CARDS_DB =
         "Name": "Desire for the Seal",
         "Img": "burning_will_for_the_seal",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -160,7 +160,7 @@ var CARDS_DB =
         "Name": "Call of the Orichalcos Servants",
         "Img": "call_of_the_orichalcos_servant",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -172,7 +172,7 @@ var CARDS_DB =
         "Name": "Cards of Consonance",
         "Img": "Cards of Consonance",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -184,7 +184,7 @@ var CARDS_DB =
         "Name": "Cards of the Red Stone",
         "Img": "cards_of_the_red_stone",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -292,7 +292,7 @@ var CARDS_DB =
         "Name": "Fusion Deployment",
         "Img": "deployment",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -304,7 +304,7 @@ var CARDS_DB =
         "Name": "Pot of Desires",
         "Img": "desires",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -325,10 +325,22 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Dogmatika Maximus",
+        "Img": "Dogmatika Maximus",
+        "Stars": 8,
+        "Type": "Spellcaster / Effect",
+        "Meta": {
+            "ATK": 1500,
+            "DEF": 3000,
+            "Attribute": "LIGHT",
+            "Effect": "You can banish 1 Fusion, Synchro, Xyz, or Link Monster from your GY; Special Summon this card from your hand. During your Main Phase: You can activate this effect; send 2 monsters with different names from your Extra Deck to the GY, also your opponent sends 2 monsters from their Extra Deck to the GY, also you cannot Special Summon from the Extra Deck for the rest of this turn. You can only use each effect of \"Dogmatika Maximus\" once per turn."
+        }
+    },
+    {
         "Name": "Dragon Shrine",
         "Img": "Dragon Shrine",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -376,7 +388,7 @@ var CARDS_DB =
         "Name": "Pot of Extravagance",
         "Img": "extravagance",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -448,7 +460,7 @@ var CARDS_DB =
         "Name": "The Fall of Atlantis",
         "Img": "impudence_of_orichalcos",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -460,7 +472,7 @@ var CARDS_DB =
         "Name": "Inferno Fire Blast",
         "Img": "inferno_fire_blast",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -520,7 +532,7 @@ var CARDS_DB =
         "Name": "Metaverse",
         "Img": "metaverse",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -568,7 +580,7 @@ var CARDS_DB =
         "Name": "Mystical Space Typhoon",
         "Img": "Mystical space typhoon",
         "Stars": 0,
-        "Type": "Spell (Quick Play)",
+        "Type": "Spell (Quick-Play)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -628,7 +640,7 @@ var CARDS_DB =
         "Name": "One Day of Peace",
         "Img": "one_day_of_peace",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -820,7 +832,7 @@ var CARDS_DB =
         "Name": "Orichalcos Magic Stone",
         "Img": "orichalcos_magic_stone",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -952,7 +964,7 @@ var CARDS_DB =
         "Name": "Polymerization",
         "Img": "Polymerization",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -964,7 +976,7 @@ var CARDS_DB =
         "Name": "Pot of Desires",
         "Img": "Pot of Desires",
         "Stars": 0,
-        "Type": "Field",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1024,7 +1036,7 @@ var CARDS_DB =
         "Name": "Red-Eyes Burn",
         "Img": "red_eyes_burn",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1060,7 +1072,7 @@ var CARDS_DB =
         "Name": "Red-Eyes Fang with Chain",
         "Img": "red_eyes_fang_with_chain",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1084,7 +1096,7 @@ var CARDS_DB =
         "Name": "Red-Eyes Fusion",
         "Img": "red_eyes_fusion",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1096,7 +1108,7 @@ var CARDS_DB =
         "Name": "Red-Eyes Insight",
         "Img": "red_eyes_insight",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1120,7 +1132,7 @@ var CARDS_DB =
         "Name": "Red-Eyes Spirit",
         "Img": "red_eyes_spirit",
         "Stars": 0,
-        "Type": "Trap",
+        "Type": "Trap (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1144,7 +1156,7 @@ var CARDS_DB =
         "Name": "Return of the Dragon Lords",
         "Img": "Return of the Dragon Lords",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1213,6 +1225,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Shaddoll Hedgehog",
+        "Img": "Shaddoll Hedgehog",
+        "Stars": 3,
+        "Type": "Spellcaster / Flip / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 200,
+            "Attribute": "DARK",
+            "Effect": "FLIP: You can add 1 \"Shaddoll\" Spell/Trap from your Deck to your hand.\nIf this card is sent to the GY by a card effect: You can add 1 \"Shaddoll\" monster from your Deck to your hand, except \"Shaddoll Hedgehog\". You can 	only use 1 \"Shaddoll Hedgehog\" effect per turn, and only once that turn."
+        }
+    },
+    {
         "Name": "Shaddoll Dragon",
         "Img": "Shadoll Dragon",
         "Stars": 4,
@@ -1222,6 +1246,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "DARK",
             "Effect": "FLIP: You can target 1 card your opponent controls; return it to the hand.\nIf this card is sent to the GY by a card effect: You can target 1 Spell/Trap on the field; destroy it. You can only use 1 \"Shaddoll Dragon\" effect per turn, and only once that turn."
+        }
+    },
+    {
+        "Name": "Shaddoll Squamata",
+        "Img": "Shadoll Squamata",
+        "Stars": 4,
+        "Type": "Spellcaster / Flip / Effect",
+        "Meta": {
+            "ATK": 1800,
+            "DEF": 1000,
+            "Attribute": "DARK",
+            "Effect": "FLIP: You can target 1 monster on the field; destroy it.\nIf this card is sent to the GY by a card effect: You can send 1 \"Shaddoll\" card from your Deck to the GY, except \"Shaddoll Squamata\". You can only use 1 \"Shaddoll Squamata\" effect per turn, and only once that turn."
         }
     },
     {
@@ -1240,7 +1276,7 @@ var CARDS_DB =
         "Name": "Silver's Cry",
         "Img": "Silver's Cry",
         "Stars": 0,
-        "Type": "Spell (Quick Play)",
+        "Type": "Spell (Quick-Play)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1276,7 +1312,7 @@ var CARDS_DB =
         "Name": "Terraforming",
         "Img": "terraforming",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1300,7 +1336,7 @@ var CARDS_DB =
         "Name": "The Melody of Awakening Dragon",
         "Img": "The Melody of Awakening Dragon",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1348,7 +1384,7 @@ var CARDS_DB =
         "Name": "The Claw of Hermos",
         "Img": "the_claws_of_hermos",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1372,7 +1408,7 @@ var CARDS_DB =
         "Name": "Trade-In",
         "Img": "Trade in",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -1396,7 +1432,7 @@ var CARDS_DB =
         "Name": "Upstart Goblin",
         "Img": "upstart_goblin",
         "Stars": 0,
-        "Type": "Spell",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,

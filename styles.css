@@ -1,0 +1,73 @@
+
+@font-face {
+  font-family: matrix_book;
+  src: url(./Fonts/matrix_book.ttf);
+}
+
+
+*{
+ font-family: matrix_book;
+}
+
+body{
+  background: linear-gradient(28deg, #8389dc, transparent);
+}
+
+.title{
+  font-size: 2em;
+}
+
+.subtitle{
+  font-size: 1.2em;
+}
+
+.description_label{
+  border-top: 1px solid rgba(0,0,0,0.3);
+  font-size: 1.1em;
+  max-width: 30em;
+}
+
+.filtered_img{
+    width: 8em;
+}
+.card_description{
+  max-height: 12em;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+.card_slot{
+  border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+.wide_button{
+  min-width: 30em;
+}
+
+.small_hint{
+  font-size: 1em;
+  opacity: 0.8;
+  padding: 0 1em;
+  background: rgba(0,0,0,0.1);
+  max-width: 23em;
+}
+
+.filter_box{
+  max-height: 20em;
+  overflow-x: auto;
+  border: 1px solid rgba(0,0,0,0.3);
+  max-width: 30em;
+  min-height: 15em;
+  background: rgba(0,0,0,0.2);
+}
+
+.text_entry{
+  min-width: 30em;
+  padding: 0.5em;
+}
+
+.infobox{
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 0.5em 1em;
+  background: rgba(0,0,0,0.1);
+  max-width: 30em;
+}
