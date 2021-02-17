@@ -141,7 +141,7 @@ var CARDS_DB =
             "ATK": 1500,
             "DEF": 0,
             "Attribute": "LIGHT",
-            "Effect": "2 monsters with the same Level\nCannot be used as Link Material. You can only use each of the following effects of \"Bujinki Ahashima\" once per turn.LI_BEGIN If this card is Link Summoned: You can Special Summon 2 monsters with the same Level, 1 from your hand and 1 from your GY, but negate their effects, and immediately after this effect resolves, Xyz Summon 1 Xyz Monster using those 2 monsters only. LI_END LI_BEGIN If an Xyz Monster this card points to activates an effect by detaching material(s) (except during the Damage Step): You can target 1 Spell/Trap your opponent controls; destroy it. LI_END"
+            "Effect": "2 monsters with the same Level\nCannot be used as Link Material. You can only use each of the following effects of \"Bujinki Ahashima\" once per turn.<ul><li>If this card is Link Summoned: You can Special Summon 2 monsters with the same Level, 1 from your hand and 1 from your GY, but negate their effects, and immediately after this effect resolves, Xyz Summon 1 Xyz Monster using those 2 monsters only.</li><li>If an Xyz Monster this card points to activates an effect by detaching material(s) (except during the Damage Step): You can target 1 Spell/Trap your opponent controls; destroy it.</li></ul>"
         }
     },
     {
@@ -201,7 +201,7 @@ var CARDS_DB =
             "ATK": 1600,
             "DEF": 800,
             "Attribute": "DARK",
-            "Effect": "If this card is sent to the GY while equipped to a monster: You can draw 1 card. You can only use each of the following effects of \"Cyberdark Cannon\" once per turn.LI_BEGIN You can discard this card; add 1 Machine \"Cyberdark\" monster from your Deck to your hand.LI_END LI_BEGIN During damage calculation, if a monster equipped with this card battles: You can send 1 monster from your Deck to the GY.LI_END"
+            "Effect": "If this card is sent to the GY while equipped to a monster: You can draw 1 card. You can only use each of the following effects of \"Cyberdark Cannon\" once per turn.<ul><li>You can discard this card; add 1 Machine \"Cyberdark\" monster from your Deck to your hand.</li><li>During damage calculation, if a monster equipped with this card battles: You can send 1 monster from your Deck to the GY.</li></ul>"
         }
     },
     {
@@ -213,7 +213,7 @@ var CARDS_DB =
             "ATK": 1600,
             "DEF": 800,
             "Attribute": "DARK",
-            "Effect": "If this card is sent to the GY while equipped to a monster: You can target 1 \"Cyberdark\" monster in your GY; add it to your hand. You can only use each of the following effects of \"Cyberdark Claw\" once per turn.LI_BEGIN You can discard this card; add 1 \"Cyberdark\" Spell/Trap from your Deck to your hand.LI_END LI_BEGIN During damage calculation, if a monster equipped with this card battles: You can send 1 monster from your Extra Deck to the GY.LI_END"
+            "Effect": "If this card is sent to the GY while equipped to a monster: You can target 1 \"Cyberdark\" monster in your GY; add it to your hand. You can only use each of the following effects of \"Cyberdark Claw\" once per turn.<ul><li>You can discard this card; add 1 \"Cyberdark\" Spell/Trap from your Deck to your hand.</li><li>During damage calculation, if a monster equipped with this card battles: You can send 1 monster from your Extra Deck to the GY.</li></ul>"
         }
     },
     {
@@ -321,7 +321,7 @@ var CARDS_DB =
             "ATK": 4000,
             "DEF": 4000,
             "Attribute": "DARK",
-            "Effect": "Cannot be Normal Summoned or Set. Can only be Special Summoned (from your hand) by banishing 1 \"Eternal Divine Wrath\" you control with 4 or more \"Wrath\" counters on it, and cannot be Special Summoned in other ways. This card Summon cannot be negated; cards and effects cannot be activated in response to this card Summon. Pay 2000 Life Points: Flip all other face-up cards on the field except Field Spell Cards; destroy all face-down cards on the field; cards and effects cannot be activated untill this effect resolves."
+            "Effect": "Cannot be Normal Summoned or Set. Can only be Special Summoned (from your hand) by banishing 1 \"The Ruin of Atlantis\" you control with 4 or more \"Wrath\" counters on it, and cannot be Special Summoned in other ways. This card Summon cannot be negated; cards and effects cannot be activated in response to this card Summon. Pay 2000 Life Points: Flip all other face-up cards on the field except Field Spell Cards; destroy all face-down cards on the field; cards and effects cannot be activated untill this effect resolves."
         }
     },
     {
@@ -369,7 +369,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Once per Duel, pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by your opponent\u2019s cards. Place one \"Wrath\" counter on this card each time any of the following condition is met: LI_BEGIN A Level 8 or higher monster on your field is destroyed. LI_END LI_BEGIN You activate 1 \"Orichalcos\" Field Spell Card. LI_END LI_BEGIN You took 2000 or more damage. LI_END LI_BEGIN Once per Duel: You have 10 or more cards in your GY. LI_END"
+            "Effect": "Once per Duel, pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by your opponent's cards. Place one \"Wrath\" counter on this card each time any of the following condition is met:<ul><li>A Level 8 or higher monster on your field is destroyed.</li><li>You activate 1 \"Orichalcos\" Field Spell Card.</li><li>You took 2000 or more damage.</li><li>Once per Duel: You have 10 or more cards in your GY.</li></ul>"
         }
     },
     {
@@ -381,7 +381,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Every \"Dark Magician\" in your Monster Zone is unaffected by your opponent's card effects. If this face-up card leaves the field: Destroy all monsters you control. You can only use the following effect of \"Eternal Soul\" once per turn. You can activate 1 of these effects; LI_BEGIN Special Summon 1 \"Dark Magician\" from your hand or GY. LI_END LI_BEGIN Add 1 \"Dark Magic Attack\" or \"Thousand Knives\" from your Deck to your hand. LI_END"
+            "Effect": "Every \"Dark Magician\" in your Monster Zone is unaffected by your opponent's card effects. If this face-up card leaves the field: Destroy all monsters you control. You can only use the following effect of \"Eternal Soul\" once per turn. You can activate 1 of these effects;<ul><li>Special Summon 1 \"Dark Magician\" from your hand or GY.</li><li>Add 1 \"Dark Magic Attack\" or \"Thousand Knives\" from your Deck to your hand.</li></ul>"
         }
     },
     {
@@ -405,7 +405,7 @@ var CARDS_DB =
             "ATK": 2800,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "2+ \"Orichalcos\" monsters with different names\nThis card gains effect based on the number of monsters used for its Link Sumon. LI_BEGIN 2+: If a monster is Normal or Special Summoned to a Zone this card points to: that monster gains 300 ATK/DEF. LI_END LI_BEGIN 3+: Once per turn: You can Special Summon a monster from your hand. LI_END LI_BEGIN 4+: When this card si Link Summoned, you can draw 4 cards, then place 3 cards on the bottom of the Deck in any order.LI_END"
+            "Effect": "2+ \"Orichalcos\" monsters with different names\nThis card gains effect based on the number of monsters used for its Link Sumon.<ul><li>2+: If a monster is Normal or Special Summoned to a Zone this card points to: that monster gains 300 ATK/DEF.</li><li>3+: Once per turn: You can Special Summon a monster from your hand.</li><li>4+: When this card si Link Summoned, you can draw 4 cards, then place 3 cards on the bottom of the Deck in any order.</li></ul>"
         }
     },
     {
@@ -465,7 +465,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Discard 1 card; choose one of the following effects:\nLI_BEGIN Destroy up to 2 monsters your opponent controls. LI_END LI_BEGIN Destroy up to 2 Spells and Traps your opponent controls. LI_END LI_BEGIN Draw 2 cards; shuffle 1 card from your hand into the Deck.LI_END"
+            "Effect": "Discard 1 card; choose one of the following effects:\n<li>Destroy up to 2 monsters your opponent controls.</li><li>Destroy up to 2 Spells and Traps your opponent controls.</li><li>Draw 2 cards; shuffle 1 card from your hand into the Deck.</li></ul>"
         }
     },
     {
@@ -501,7 +501,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "If you control \"The Seal of Orichalcos\", this card effect is: LI_BEGIN Your opponent cannot declare a direct attack. Any damage to you from card(s) effects is halved. LI_END If you do not control \"The Seal of Orichalcos\", this card effect is: LI_BEGIN During your End Phase, Special Summon up to 2 \"Sentinel Tokens\" (Warrior-Type/LIGHT/ Level 2/ ATK 500/DEF 500). LI_END"
+            "Effect": "If you control \"The Seal of Orichalcos\", this card effect is:<ul><li>Your opponent cannot declare a direct attack. Any damage to you from card(s) effects is halved.</li> If you do not control \"The Seal of Orichalcos\", this card effect is:<ul><li>During your End Phase, Special Summon up to 2 \"Sentinel Tokens\" (Warrior-Type/LIGHT/ Level 2/ ATK 500/DEF 500).</li></ul>"
         }
     },
     {
@@ -621,7 +621,7 @@ var CARDS_DB =
             "ATK": 3000,
             "DEF": 3000,
             "Attribute": "LIGHT",
-            "Effect": "2 Level 8 Dragon-Type monsters\nOnce per turn, if you control no other monsters: You can detach 1 Xyz Material from this card, then activate 1 of these effects. LI_BEGIN Special Summon 1 Dragon-Type monster from your hand.LI_END LI_BEGIN Target 1 Dragon-Type monster your opponent controls; take control of that target.LI_END LI_BEGIN Dragon-Type monsters your opponent controls cannot activate their effects until the end of your opponent's turn. LI_END"
+            "Effect": "2 Level 8 Dragon-Type monsters\nOnce per turn, if you control no other monsters: You can detach 1 Xyz Material from this card, then activate 1 of these effects.<ul><li>Special Summon 1 Dragon-Type monster from your hand.</li><li>Target 1 Dragon-Type monster your opponent controls; take control of that target.</li><li>Dragon-Type monsters your opponent controls cannot activate their effects until the end of your opponent's turn.</li></ul>"
         }
     },
     {
@@ -873,7 +873,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "When your opponent would Summon a monster, your opponent chooses one of the following effects:\nLI_BEGIN egate the Summon and if you do, destroy that card.LI_END LI_BEGIN Special Summon this card (is also still a Trap card) as an Effect \t\tMonster (Aqua/WATER/Level ?/ATK ?/DEF ?) with the same Level, ATK and DEF of the Summoned monster, with this effect: cannot attack or be destroyed by card effects. LI_END LI_BEGIN Draw 1 card for each 1000 ATK of the Summoned monster. LI_END"
+            "Effect": "When your opponent would Summon a monster, your opponent chooses one of the following effects:\n<li>egate the Summon and if you do, destroy that card.</li><li>Special Summon this card (is also still a Trap card) as an Effect \t\tMonster (Aqua/WATER/Level ?/ATK ?/DEF ?) with the same Level, ATK and DEF of the Summoned monster, with this effect: cannot attack or be destroyed by card effects.</li><li>Draw 1 card for each 1000 ATK of the Summoned monster.</li></ul>"
         }
     },
     {
@@ -921,7 +921,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "EARTH",
-            "Effect": "1 \"Orichalcos\" monster\nChoose one of the following effetcs: LI_BEGIN Pay 400 Life Points: Draw 1 card.LI_END LI_BEGIN Pay 800 Life Points: Special Summon 1 monster from your GY.LI_END LI_BEGIN Pay 1200 Life Points: Add one card from your Deck to your hand. LI_END After this effect resolves, banish this card; during your opponent's second next Standby Phase, Special Summon this card on your opponent's side of the field."
+            "Effect": "1 \"Orichalcos\" monster\nChoose one of the following effetcs:<ul><li>Pay 400 Life Points: Draw 1 card.</li><li>Pay 800 Life Points: Special Summon 1 monster from your GY.</li><li>Pay 1200 Life Points: Add one card from your Deck to your hand.</li> After this effect resolves, banish this card; during your opponent's second next Standby Phase, Special Summon this card on your opponent's side of the field."
         }
     },
     {
@@ -1197,7 +1197,7 @@ var CARDS_DB =
             "ATK": 2800,
             "DEF": 0,
             "Attribute": "EARTH",
-            "Effect": "2+ monsters with different names\nThis card gains effects based on the number of monsters used for its Link Summon. LI_BEGIN 2+: If a monster(s) is Normal or Special Summoned to a zone this card points to: That monster(s) gains 300 ATK/DEF.LI_END LI_BEGIN 3+: Once per turn, during your Main Phase: You can Special Summon 1 monster from your hand.LI_END LI_BEGIN 4: When this card is Link Summoned: You can draw 4 cards, then place 3 cards from your hand on the bottom of the Deck in any order.LI_END"
+            "Effect": "2+ monsters with different names\nThis card gains effects based on the number of monsters used for its Link Summon.<ul><li>2+: If a monster(s) is Normal or Special Summoned to a zone this card points to: That monster(s) gains 300 ATK/DEF.</li><li>3+: Once per turn, during your Main Phase: You can Special Summon 1 monster from your hand.</li><li>4: When this card is Link Summoned: You can draw 4 cards, then place 3 cards from your hand on the bottom of the Deck in any order.</li></ul>"
         }
     },
     {

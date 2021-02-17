@@ -278,8 +278,8 @@ function deck_descr(deck_to_print){
   }
 
   return (deck_to_print + " Deck has the follwing cards structure:<ul><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Deck card(s): </div>" + count_deck  + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Extra Deck  card(s): </div>" + count_extra + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Token card(s): </div>" + count_tokens + "</li></ul>");
-
 }
+
 
 function tell_deck() {
   let deck_name = document.getElementById("chosen_id").value;
@@ -531,7 +531,7 @@ function getCardDescription(card) {
 
 
   desc += "Type: " + card["Type"] + "\n\n";
-  desc += card["Meta"]["Effect"]
+  desc += card["Meta"]["Effect"];
 
   return desc;
 }
@@ -545,6 +545,13 @@ function clearFilterBox() {
 
 function removeCardFromRecipe(element){
   element.parentNode.removeChild(element);
+}
+
+function getRecipeDescription(){
+  let d = document.getElementById("recipe_box");
+  for(let i = 0; i < d.children.length; i++){
+
+  }
 }
 
 function addCardToRecipe(cardImg) {
