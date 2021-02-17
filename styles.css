@@ -37,6 +37,13 @@ body{
 }
 .card_slot{
   border-bottom: 2px solid rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.card_slot:hover{
+  background: rgba(0,0,0,0.3);
+}
+.card_slot:active{
+  background: rgba(0,0,0,0.4);
 }
 
 .wide_button{
@@ -60,6 +67,7 @@ body{
   background: rgba(0,0,0,0.2);
 }
 
+
 .text_entry{
   min-width: 30em;
   padding: 0.5em;
@@ -70,4 +78,17 @@ body{
   padding: 0.5em 1em;
   background: rgba(0,0,0,0.1);
   max-width: 30em;
+}
+
+.card_in_recipe{
+  width: 4em;
+  display: inline-block;
+  border: 4px solid transparent;
+  cursor: pointer;
+}
+.card_in_recipe:hover{
+  border: 4px solid rgba(0,0,0,0.6);
+}
+.card_in_recipe:active{
+  border: 4px solid rgba(255,0,0,0.8);
 }

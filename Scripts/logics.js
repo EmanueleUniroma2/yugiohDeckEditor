@@ -496,7 +496,7 @@ function searchCard() {
 
   let filtered = filterCards(s_name, s_effect, level, attribute, type);
   clearFilterBox();
-  for(let i = 0; i < filtered.length && i < 20; i++){
+  for(let i = 0; i < filtered.length; i++){
     addFilteredBoxToRecipe(filtered[i]);
   }
 }
@@ -543,10 +543,23 @@ function clearFilterBox() {
   }
 }
 
+function removeCardFromRecipe(element){
+  element.parentNode.removeChild(element);
+}
+
+function addCardToRecipe(cardImg) {
+  let c = makeNode("img", "", "card_in_recipe");
+  c.src = "./Core_All_Cards/"+ cardImg + ".png";
+  c.setAttribute("onclick", "removeCardFromRecipe(this)");
+  let d = document.getElementById("recipe_box");
+  d.appendChild(c);
+}
+
 function addFilteredBoxToRecipe(card){
   let box = document.getElementById("filtered_cards_results");
 
   let table = makeNode("table", "", "card_slot");
+  table.setAttribute("onclick" , "addCardToRecipe('"+card["Img"]+"')");
   let row = makeNode("tr","","");
   let cell_1 = makeNode("td", "", "");
   let cell_2 = makeNode("td", "", "");
@@ -596,10 +609,15 @@ function pageCreateDeck() {
   addDom(makeButton("Search Cards", "wide_button", searchCard));
   addDom(makeSpace(1));
 
+  addDom(makeNode("div","Click on a card to add it to the Deck Recipe", "small_hint"));
   addDom(setId(makeNode("div","", "filter_box"),"filtered_cards_results"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 2: Verify your Deck Recipe","subtitle"));
+  addDom(makeSpace(1));
+
+  addDom(makeNode("div","Click on each card to remove it", "small_hint"));
+  addDom(setId(makeNode("div","", "filter_box"),"recipe_box"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 3: Save the Deck Recipe to use it","subtitle"));
