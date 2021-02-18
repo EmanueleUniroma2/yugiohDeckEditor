@@ -1,124 +1,5 @@
 
-var DECKS_LIST = [
-  {
-    "name":"Orichalcos",
-    "cards":[
-      { "type": "deck", "name":"orichalcos_magician_apprendice", "amount":2},
-      { "type": "deck", "name":"Terror of Atlantis", "amount":1},
-      { "type": "deck", "name":"burning_will_for_the_seal", "amount":2},
-      { "type": "deck", "name":"arrogance_of_orichalcos", "amount":2},
-      { "type": "deck", "name":"attack_guidance_barrier", "amount":2},
-      { "type": "deck", "name":"call_of_the_orichalcos_servant", "amount":2},
-      { "type": "deck", "name":"divine_basilisk_geh", "amount":1},
-      { "type": "deck", "name":"eternal_divine_wrath", "amount":1},
-      { "type": "deck", "name":"impudence_of_orichalcos", "amount":2},
-      { "type": "deck", "name":"light_barrier_of_the_stolen_souls", "amount":2},
-      { "type": "deck", "name":"mirror_knight_calling", "amount":1},
-      { "type": "token", "name":"mirror_knight_token", "amount":4},
-      { "type": "deck", "name":"orichalcos_aristeros", "amount":1},
-      { "type": "deck", "name":"orichalcos_dexia", "amount":1},
-      { "type": "deck", "name":"orichalcos_deuteros", "amount":1},
-      { "type": "deck", "name":"orichalcos_gigas", "amount":1},
-      { "type": "deck", "name":"orichalcos_kiseichu", "amount":1},
-      { "type": "deck", "name":"orichalcos_kynerza", "amount":2},
-      { "type": "deck", "name":"orichalcos_malevolence", "amount":2},
-      { "type": "deck", "name":"orichalcos_kyutora", "amount":1},
-      { "type": "deck", "name":"orichalcos_magic_stone", "amount":2},
-      { "type": "deck", "name":"orichalcos_magician", "amount":2},
-      { "type": "deck", "name":"orichalcos_magician_girl", "amount":2},
-      { "type": "deck", "name":"orichalcos_magnetia", "amount":2},
-      { "type": "deck", "name":"orichalcos_matia", "amount":2},
-      { "type": "deck", "name":"orichalcos_mirror", "amount":1},
-      { "type": "deck", "name":"orichalcos_punos", "amount":2},
-      { "type": "deck", "name":"orichalcos_shunoros", "amount":1},
-      { "type": "deck", "name":"orichalcos_tritos", "amount":1},
-      { "type": "deck", "name":"sword_of_sealing", "amount":2},
-      { "type": "token", "name":"sentinel_token", "amount":9},
-      { "type": "deck", "name":"the_seal_of_orichalcos", "amount":1},
-      { "type": "extra", "name":"sealed_sacred_tree", "amount":2},
-      { "type": "extra", "name":"orichalcos_true_form", "amount":1},
-      { "type": "extra", "name":"orichalcos_talisman_trader", "amount":1},
-      { "type": "extra", "name":"orichalcos_last_defender", "amount":2},
-      { "type": "extra", "name":"orichalcos_golem", "amount":2},
-      { "type": "extra", "name":"orichalcos_eva", "amount":1},
-      { "type": "extra", "name":"gizonda_curse_of_the_diferent_dimention", "amount":1},
-      { "type": "extra", "name":"fossil_dragon_orichalcos", "amount":1},
-      { "type": "extra", "name":"orichalcos_ancient_soldier", "amount":1},
-      { "type": "extra", "name":"orichalcos_chimera_blaze", "amount":2},
-      { "type": "extra", "name":"levonia_the_orichalcos_chaos_prince", "amount":1},
-    ]
-  },
-  {
-    "name":"Blue Eyes White Dragon",
-    "cards":[
-      { "type": "deck", "name":"Deep eyes white dragon", "amount":2},
-      { "type": "deck", "name":"Blue eyes white dragon", "amount":3},
-      { "type": "deck", "name":"Blue-Eyes Alternative White Dragon", "amount":3},
-      { "type": "deck", "name":"Blue-Eyes Abiss Dragon", "amount":2},
-      { "type": "deck", "name":"Dragon spirit of white", "amount":1},
-      { "type": "deck", "name":"The White Stone of Ancients", "amount":3},
-      { "type": "deck", "name":"The White Stone of Legend", "amount":2},
-      { "type": "deck", "name":"Sage with Eyes of Blue", "amount":3},
-      { "type": "deck", "name":"Return of the Dragon Lords", "amount":3},
-      { "type": "deck", "name":"Polymerization", "amount":2},
-      { "type": "deck", "name":"Pot of Desires", "amount":2},
-      { "type": "deck", "name":"Trade in", "amount":2},
-      { "type": "deck", "name":"Cards of Consonance", "amount":2},
-      { "type": "deck", "name":"Dragon Shrine", "amount":3},
-      { "type": "deck", "name":"The Melody of Awakening Dragon", "amount":3},
-      { "type": "deck", "name":"Mystical space typhoon", "amount":2},
-      { "type": "deck", "name":"Silver's Cry", "amount":2},
-      { "type": "extra", "name":"Blue eyes alternative ultimate dragon", "amount":1},
-      { "type": "extra", "name":"Neo Blue-Eyes Ultimate Dragon", "amount":1},
-      { "type": "extra", "name":"Blue-Eyes Twin Burst Dragon", "amount":2},
-      { "type": "extra", "name":"Azure eyes silver dragon", "amount":2},
-      { "type": "extra", "name":"Blue-Eyes Spirit Dragon", "amount":2},
-      { "type": "extra", "name":"Shooting Riser Dragon", "amount":1},
-      { "type": "extra", "name":"Number 46 Dragluon", "amount":1},
-      { "type": "extra", "name":"Galaxy-Eyes Cipher Blade Dragon", "amount":1},
-      { "type": "extra", "name":"Galaxy-Eyes Full Armor Photon Dragon", "amount":1},
-      { "type": "extra", "name":"Galaxy-Eyes Cipher Dragon", "amount":1},
-      { "type": "extra", "name":"Number 38 Hope Harbinger Dragon Titanic Galaxy", "amount":1},
-      { "type": "extra", "name":"Linkuriboh", "amount":1},
-    ]
-  },
-  {
-    "name":"Red Eyes Black Dragon",
-    "cards":[
-      { "type": "deck", "name":"dark_magician", "amount":2},
-      { "type": "deck", "name":"red_eyes_black_dragon", "amount":3},
-      { "type": "deck", "name":"red_eyes_darkness_metal_dragon", "amount":1},
-      { "type": "deck", "name":"red_eyes_alternative_black_dragon", "amount":3},
-      { "type": "deck", "name":"tenyi_spirit_vishuda", "amount":3},
-      { "type": "deck", "name":"red_eyes_retro_dragon", "amount":2},
-      { "type": "deck", "name":"red_eyes_baby_dragon", "amount":2},
-      { "type": "deck", "name":"black_metal_dragon", "amount":3},
-      { "type": "deck", "name":"the_black_stone_of_legend", "amount":3},
-      { "type": "deck", "name":"red_eyes_fusion", "amount":3},
-      { "type": "deck", "name":"cards_of_the_red_stone", "amount":3},
-      { "type": "deck", "name":"the_claws_of_hermos", "amount":2},
-      { "type": "deck", "name":"inferno_fire_blast", "amount":3},
-      { "type": "deck", "name":"red_eyes_insight", "amount":3},
-      { "type": "deck", "name":"red_eyes_spirit", "amount":3},
-      { "type": "deck", "name":"red_eyes_fang_with_chain", "amount":3},
-      { "type": "deck", "name":"return_of_the_red_eyes", "amount":3},
-      { "type": "deck", "name":"red_eyes_burn", "amount":2},
-      { "type": "deck", "name":"eternal_soul", "amount":1},
-      { "type": "extra", "name":"meteor_black_comet_dragon", "amount":1},
-      { "type": "extra", "name":"red_eyes_dark_dragoon", "amount":2},
-      { "type": "extra", "name":"red_eyes_black_dragon_sword", "amount":2},
-      { "type": "extra", "name":"red_eyes_flare_metal_dragon", "amount":2},
-      { "type": "extra", "name":"mecha_phantom_beast_dracossack", "amount":1},
-      { "type": "extra", "name":"number_11_big_Eye", "amount":1},
-      { "type": "extra", "name":"saryuja_skull_dread", "amount":1},
-      { "type": "extra", "name":"darkness_metal_the_dragon_of_dark_steel", "amount":1},
-      { "type": "extra", "name":"bujinki_ahashima", "amount":1},
-      { "type": "extra", "name":"wee_witchs_apprentice", "amount":1},
-      { "type": "extra", "name":"Union Carrier", "amount":1},
-      { "type": "extra", "name":"relinquished_anima", "amount":1},
-    ]
-  }
-];
+var DECK_LIST = getDeckList();
 
 var CARDS_COUNTER = 0;
 var PAGE = null;
@@ -195,6 +76,7 @@ function getDeckByName(deck_to_print){
 
 function displayDeck(deck_to_print, disable_backs){
 
+  document.body.style.background = "transparent";
   document.body.style.margin = "0";
 
   let deck = getDeckByName(deck_to_print);
@@ -266,13 +148,13 @@ function deck_descr(deck_to_print){
   let count_extra = 0;
   let count_tokens = 0;
   for(let i = 0; i < deck.length; i++){
-    if(deck[i]["type"] == "deck"){
+    if(deck[i]["type"] == "Deck"){
       count_deck+= deck[i]["amount"];
     }
-    if(deck[i]["type"] == "extra"){
+    if(deck[i]["type"] == "Extra Deck"){
       count_extra+= deck[i]["amount"];
     }
-    if(deck[i]["type"] == "token"){
+    if(deck[i]["type"] == "Tokens"){
       count_tokens+= deck[i]["amount"];
     }
   }
@@ -376,16 +258,81 @@ function save_deck_recipe() {
 
   if(name.length == 0){
     alert("Please, enter the Deck's name");
+    return;
+  }
+
+  let cards = document.getElementById("recipe_box").children;
+
+  if(cards.length == 0){
+    alert("Please, add at least 1 card to the Deck Recipe");
+    return;
+  }
+
+
+  let cards_array = [];
+  for(let i = 0; i < cards.length; i++){
+    cards_array.push(cards[i]);
+  }
+
+  let deckcards = [];
+  // { "type": "Tokens", "name":"mirror_knight_token", "amount":4},
+  for(let i = 0; i < cards_array.length; i++){
+
+    let img = cleanCardPathImg(decodeURI(cards_array[i].src));
+
+    let el_index = getElementFromCardsArrayIndex(deckcards, img);
+    if(el_index == -1){
+      deckcards.push({ "type": cards_array[i].name, "name": img, "amount": 1});
+    }else{
+      deckcards[el_index]["amount"] = deckcards[el_index]["amount"] + 1;
+    }
   }
 
   let deck = {
     "name": name,
-    "cards":[]
+    "cards":deckcards
   }
 
-  
+  storeCustomDeck(deck);
+
+  alert("Deck " + name + " created!");
 
   pageHome();
+}
+
+function mergeCustomDecks(){
+  let c_decks = localStorage.getItem("c_decks");
+  if(c_decks != null){
+    c_decks = JSON.parse(c_decks);
+    for(let i = 0; i < c_decks.length; i++){
+      DECKS_LIST.push(c_decks[i]);
+    }
+  }
+}
+
+function storeCustomDeck(deck) {
+  let c_decks = localStorage.getItem("c_decks");
+  if(c_decks == null){
+    c_decks = [deck];
+  }else{
+    c_decks = JSON.parse(c_decks);
+    c_decks.push(deck);
+  }
+  localStorage.setItem("c_decks", JSON.stringify(c_decks));
+}
+
+function cleanCardPathImg(fullSrc) {
+  let spl = fullSrc.replace(".png","").split("/");
+  return spl[spl.length-1];
+}
+
+function getElementFromCardsArrayIndex(deckcards, imgPathFull){
+  for(let i = 0; i < deckcards.length; i++){
+    if(deckcards[i]["name"] == imgPathFull){
+      return i;
+    }
+  }
+  return -1;
 }
 
 function addDom(el){
@@ -393,6 +340,8 @@ function addDom(el){
 }
 
 function pageHome(){
+
+  mergeCustomDecks();
 
   clearPage();
   document.body.style.margin = "2rem";
@@ -631,13 +580,17 @@ function getCardDeckDest(card) {
   return "Deck";
 }
 
+
+
 function addFilteredBoxToRecipe(card){
+
   let box = document.getElementById("filtered_cards_results");
 
   let cardDeckDest = getCardDeckDest(card);
 
   let table = makeNode("table", "", "card_slot");
-  table.setAttribute("onclick" , "addCardToRecipe('"+cardDeckDest + "___" + card["Img"]+"')");
+  table.id = card["Name"];
+  table.setAttribute("onclick" , "addCardToRecipe('"+cardDeckDest + "___" + card["Img"] +"')");
   let row = makeNode("tr","","");
   let cell_1 = makeNode("td", "", "");
   let cell_2 = makeNode("td", "", "");
@@ -655,12 +608,16 @@ function addFilteredBoxToRecipe(card){
   box.appendChild(table);
 }
 
+function makeBackTitle(txt) {
+  return makeNode("div","<div class=\"back_btn\" onclick=\"pageHome();\">ᐊ</div><div style=\"display: inline-block;\">" + txt + "</div>","title");
+}
+
 function pageCreateDeck() {
 
   clearPage();
   document.body.style.margin = "2rem";
 
-  addDom(makeNode("div","Create your own Deck","title"));
+  addDom(makeBackTitle("Create your own Deck"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 1: Use the following filters to find Cards","subtitle"));
@@ -708,10 +665,6 @@ function pageCreateDeck() {
   addDom(makeSpace(1));
 
   addDom(makeButton("Save Deck Recipe", "wide_button", save_deck_recipe));
-  addDom(makeSpace(1));
-
-  addDom(makeNode("div","Or just go back (All work will be lost)", "small_hint"));
-  addDom(makeButton("Go Back", "wide_button", pageHome));
   addDom(makeSpace(1));
 
   updateRecipeDescription(null);
