@@ -1,4 +1,4 @@
-var CARDS_DB = 
+var CARDS_DB =
 [
     {
         "Name": "Arrogance of Orichalcos",
@@ -157,15 +157,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Call of the Haunted",
         "Img": "Call of the Haunted",
         "Stars": 0,
-        "Type": "",
+        "Type": "Trap (Continuous)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Activate this card by targeting 1 monster in your GY; Special Summon that target in Attack Position. When this card leaves the field, destroy that monster. When that monster is destroyed, destroy this card."
         }
     },
     {
@@ -253,7 +253,7 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Cyberdark Inferno",
         "Img": "Cyberdark Inferno",
         "Stars": 0,
         "Type": "",
@@ -261,7 +261,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "\"Cyberdark\" Effect Monsters you control that are equipped with an Equip Card cannot be destroyed by your opponent's card effects, also your opponent cannot target them with card effects. You can target 1 \"Cyberdark\" monster you control; return it to the hand, then, immediately after this effect resolves, you can Normal Summon 1 \"Cyberdark\" monster. You can only use this effect of \"Cyberdark Inferno\" once per turn. If this card in its owner's control is destroyed by an opponent's card effect: You can add 1 \"Polymerization\" Spell or \"Fusion\" Spell from your Deck to your hand."
         }
     },
     {
@@ -433,15 +433,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Future Fusion",
         "Img": "Future Fusion",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Continuous)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "During your 1st Standby Phase after this card's activation: Show 1 Fusion Monster in your Extra Deck and send the Fusion Materials listed on it from your Main Deck to the GY. During your 2nd Standby Phase after this card's activation: Fusion Summon 1 Fusion Monster from your Extra Deck with the same name as the monster you showed, and target it with this card. When this card leaves the field, destroy that target. When that target is destroyed, destroy this card."
         }
     },
     {
@@ -541,15 +541,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Limiter Removal",
         "Img": "Limiter Removal",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Quick-Play)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Double the ATK of all Machine monsters you currently control, until the end of this turn. During the End Phase of this turn, destroy those monsters."
         }
     },
     {
@@ -625,7 +625,7 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Monster Reborn",
         "Img": "Monster Reborn",
         "Stars": 0,
         "Type": "",
@@ -633,7 +633,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Target 1 monster in either GY; Special Summon it."
         }
     },
     {
@@ -1057,18 +1057,6 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
-        "Img": "R326f9d84996d25f7cd41423c866d0960.",
-        "Stars": 0,
-        "Type": "",
-        "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
-        }
-    },
-    {
         "Name": "Red-Eyes Alternative Black Dragon",
         "Img": "red_eyes_alternative_black_dragon",
         "Stars": 7,
@@ -1285,7 +1273,7 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Shaddoll Schism",
         "Img": "Schaddoll Schism",
         "Stars": 0,
         "Type": "",
@@ -1293,7 +1281,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "During the Main Phase, you can: Fusion Summon 1 "Shaddoll" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or GY, but it cannot attack directly. Then, you can send to the GY 1 monster your opponent controls with the same Attribute as that Fusion Summoned monster. You can only use this effect of \"Shaddoll Schism\" once per turn."
         }
     },
     {
@@ -1321,15 +1309,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Shaddoll Fusion",
         "Img": "Shaddoll Fusion",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Fusion Summon 1 \"Shaddoll\" Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. If your opponent controls a monster that was Special Summoned from the Extra Deck, you can also use monsters in your Deck as Fusion Material. You can only activate 1 \"Shaddoll Fusion\" per turn."
         }
     },
     {
@@ -1393,7 +1381,7 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Super Polymerizzation",
         "Img": "Super Polymerizzation",
         "Stars": 0,
         "Type": "",
@@ -1401,7 +1389,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Discard 1 card; Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from either field as Fusion Material. Neither player can activate cards or effects in response to this card's activation."
         }
     },
     {
