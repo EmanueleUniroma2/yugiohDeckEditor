@@ -649,15 +649,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Nadir Servant",
         "Img": "Nadir Servant",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Send 1 monster from your Extra Deck to the GY, then add 1 \"Dogmatika\" monster or \"Fallen of Albaz\" from your Deck or GY to your hand, that has ATK less than or equal to that sent monster in the GY, also, for the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck. You can only activate 1 \"Nadir Servant\" per turn."
         }
     },
     {
