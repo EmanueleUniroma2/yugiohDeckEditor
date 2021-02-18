@@ -1,4 +1,4 @@
-var CARDS_DB =
+var CARDS_DB = 
 [
     {
         "Name": "Arrogance of Orichalcos",
@@ -157,6 +157,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Call of the Haunted",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Call of the Orichalcos Servants",
         "Img": "call_of_the_orichalcos_servant",
         "Stars": 0,
@@ -238,6 +250,18 @@ var CARDS_DB =
             "DEF": 800,
             "Attribute": "DARK",
             "Effect": "If this card is Normal Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip that Dragon monster to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. If this card attacks a Defense Position monster, inflict piercing battle damage. If this card would be destroyed by battle, destroy that equipped monster, instead."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "Cyberdark Inferno",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
@@ -409,6 +433,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Future Fusion",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Galaxy-Eyes Cipher Blade Dragon",
         "Img": "Galaxy-Eyes Cipher Blade Dragon",
         "Stars": 9,
@@ -505,6 +541,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Limiter Removal",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Linkuriboh",
         "Img": "Linkuriboh",
         "Stars": 1,
@@ -577,6 +625,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Monster Reborn",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Mystical Space Typhoon",
         "Img": "Mystical space typhoon",
         "Stars": 0,
@@ -586,6 +646,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "Target 1 Spell/Trap on the field; destroy that target."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "Nadir Servant",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
@@ -985,6 +1057,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "R326f9d84996d25f7cd41423c866d0960.",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Red-Eyes Alternative Black Dragon",
         "Img": "red_eyes_alternative_black_dragon",
         "Stars": 7,
@@ -1201,6 +1285,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Schaddoll Schism",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Sealed Sacred Tree",
         "Img": "sealed_sacred_tree",
         "Stars": 1,
@@ -1225,6 +1321,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "Shaddoll Fusion",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Shaddoll Hedgehog",
         "Img": "Shaddoll Hedgehog",
         "Stars": 3,
@@ -1233,7 +1341,7 @@ var CARDS_DB =
             "ATK": 800,
             "DEF": 200,
             "Attribute": "DARK",
-            "Effect": "FLIP: You can add 1 \"Shaddoll\" Spell/Trap from your Deck to your hand.\nIf this card is sent to the GY by a card effect: You can add 1 \"Shaddoll\" monster from your Deck to your hand, except \"Shaddoll Hedgehog\". You can 	only use 1 \"Shaddoll Hedgehog\" effect per turn, and only once that turn."
+            "Effect": "FLIP: You can add 1 \"Shaddoll\" Spell/Trap from your Deck to your hand.\nIf this card is sent to the GY by a card effect: You can add 1 \"Shaddoll\" monster from your Deck to your hand, except \"Shaddoll Hedgehog\". You can only use 1 \"Shaddoll Hedgehog\" effect per turn, and only once that turn."
         }
     },
     {
@@ -1282,6 +1390,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "Target 1 Dragon Normal Monster in your GY; Special Summon that target. You can only activate 1 \"Silver's Cry\" per turn."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "Super Polymerizzation",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
