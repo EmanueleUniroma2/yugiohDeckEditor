@@ -465,7 +465,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Discard 1 card; choose one of the following effects:\n<li>Destroy up to 2 monsters your opponent controls.</li><li>Destroy up to 2 Spells and Traps your opponent controls.</li><li>Draw 2 cards; shuffle 1 card from your hand into the Deck.</li></ul>"
+            "Effect": "Discard 1 card; choose one of the following effects:<ul><li>Destroy up to 2 monsters your opponent controls.</li><li>Destroy up to 2 Spells and Traps your opponent controls.</li><li>Draw 2 cards; shuffle 1 card from your hand into the Deck.</li></ul>"
         }
     },
     {
@@ -873,7 +873,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "When your opponent would Summon a monster, your opponent chooses one of the following effects:\n<li>egate the Summon and if you do, destroy that card.</li><li>Special Summon this card (is also still a Trap card) as an Effect \t\tMonster (Aqua/WATER/Level ?/ATK ?/DEF ?) with the same Level, ATK and DEF of the Summoned monster, with this effect: cannot attack or be destroyed by card effects.</li><li>Draw 1 card for each 1000 ATK of the Summoned monster.</li></ul>"
+            "Effect": "When your opponent would Summon a monster, your opponent chooses one of the following effects:<ul><li>egate the Summon and if you do, destroy that card.</li><li>Special Summon this card (is also still a Trap card) as an Effect \t\tMonster (Aqua/WATER/Level ?/ATK ?/DEF ?) with the same Level, ATK and DEF of the Summoned monster, with this effect: cannot attack or be destroyed by card effects.</li><li>Draw 1 card for each 1000 ATK of the Summoned monster.</li></ul>"
         }
     },
     {

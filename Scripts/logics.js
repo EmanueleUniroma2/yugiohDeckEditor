@@ -277,9 +277,16 @@ function deck_descr(deck_to_print){
     }
   }
 
-  return (deck_to_print + " Deck has the follwing cards structure:<ul><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Deck card(s): </div>" + count_deck  + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Extra Deck  card(s): </div>" + count_extra + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Token card(s): </div>" + count_tokens + "</li></ul>");
+  return deck_to_print + " " + summarizeDeck(count_deck, count_extra, count_tokens);
 }
 
+function summarizeDeck(count_deck, count_extra, count_tokens) {
+  let c1 = +count_deck;
+  let c2 = +count_extra;
+  let c3 = +count_tokens;
+  let tot = c1 + c2 + c3;
+  return "Deck has the follwing cards structure:<ul><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Total card(s): </div>" + tot.toString() + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Deck card(s): </div>" + count_deck  + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Extra Deck  card(s): </div>" + count_extra + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Token card(s): </div>" + count_tokens + "</li></ul>";
+}
 
 function tell_deck() {
   let deck_name = document.getElementById("chosen_id").value;
@@ -365,6 +372,19 @@ function objArrayExtractKeyArray(obj_array, keyname) {
 
 function save_deck_recipe() {
 
+  let name = document.getElementById("deck_name_id").value;
+
+  if(name.length == 0){
+    alert("Please, enter the Deck's name");
+  }
+
+  let deck = {
+    "name": name,
+    "cards":[]
+  }
+
+  
+
   pageHome();
 }
 
@@ -408,14 +428,6 @@ function pageHome(){
   addDom(makeSpace(1));
 
   tell_deck();
-}
-
-function search_by_name() {
-
-}
-
-function search_by_effect() {
-
 }
 
 
@@ -501,6 +513,7 @@ function searchCard() {
   }
 }
 
+
 function getCardDescription(card) {
 
   let desc = "";
@@ -536,6 +549,30 @@ function getCardDescription(card) {
   return desc;
 }
 
+function resetRecipeContentResume(){
+  let d = document.getElementById("recipe_resume");
+  if(d != null){
+    d.parentNode.removeChild(d);
+  }
+}
+
+function updateRecipeContentResume(cardType, delta) {
+  let d = document.getElementById("recipe_resume");
+  if(d == null){
+    d = document.createElement("div");
+    d.id = "recipe_resume";
+    d.style.display = "none";
+    d.innerHTML = "{ \"Deck\": 0, \"Extra Deck\": 0, \"Tokens\": 0}";
+    document.body.appendChild(d);
+  }
+
+  let obj = JSON.parse(d.innerHTML);
+  obj[cardType] = obj[cardType]+delta;
+  d.innerHTML = JSON.stringify(obj);
+
+  updateRecipeDescription(obj);
+}
+
 function clearFilterBox() {
   let box = document.getElementById("filtered_cards_results");
   while(box.firstChild){
@@ -544,29 +581,63 @@ function clearFilterBox() {
 }
 
 function removeCardFromRecipe(element){
+  updateRecipeContentResume(element.name,-1);
   element.parentNode.removeChild(element);
 }
 
-function getRecipeDescription(){
-  let d = document.getElementById("recipe_box");
-  for(let i = 0; i < d.children.length; i++){
+function updateRecipeDescription(obj){
 
+  let c1 = 0;
+  let c2 = 0;
+  let c3 = 0;
+
+  if(obj != null){
+    c1 = obj["Deck"];
+    c2 = obj["Extra Deck"];
+    c3 = obj["Tokens"];
   }
+
+  let desc = "Your " + summarizeDeck(c1,c2,c3);
+
+  document.getElementById("description").innerHTML = desc;
 }
 
-function addCardToRecipe(cardImg) {
+function addCardToRecipe(cardDeckDest___cardImg) {
+
+  let spl = cardDeckDest___cardImg.split("___");
+  let deckDest = spl[0];
+  let cardImg = spl[1];
+
+  updateRecipeContentResume(deckDest,1);
+
   let c = makeNode("img", "", "card_in_recipe");
   c.src = "./Core_All_Cards/"+ cardImg + ".png";
+  c.name = deckDest;
   c.setAttribute("onclick", "removeCardFromRecipe(this)");
   let d = document.getElementById("recipe_box");
   d.appendChild(c);
 }
 
+function getCardDeckDest(card) {
+  let t = card["Type"];
+  if(t.indexOf("Fusion") != -1 || t.indexOf("Xyz") != -1 || t.indexOf("Synchro") != -1 || t.indexOf("Link") != -1){
+    return "Extra Deck";
+  }
+
+  if(t == "Token"){
+    return "Tokens";
+  }
+
+  return "Deck";
+}
+
 function addFilteredBoxToRecipe(card){
   let box = document.getElementById("filtered_cards_results");
 
+  let cardDeckDest = getCardDeckDest(card);
+
   let table = makeNode("table", "", "card_slot");
-  table.setAttribute("onclick" , "addCardToRecipe('"+card["Img"]+"')");
+  table.setAttribute("onclick" , "addCardToRecipe('"+cardDeckDest + "___" + card["Img"]+"')");
   let row = makeNode("tr","","");
   let cell_1 = makeNode("td", "", "");
   let cell_2 = makeNode("td", "", "");
@@ -595,10 +666,10 @@ function pageCreateDeck() {
   addDom(makeNode("div","Step 1: Use the following filters to find Cards","subtitle"));
   addDom(makeSpace(1));
 
-  addDom(setId(makeTextEntry("Search card by Name:", search_by_name), "name_search_id"));
+  addDom(setId(makeTextEntry("Search card by Name:", null), "name_search_id"));
   addDom(makeSpace(1));
 
-  addDom(setId(makeTextEntry("Search card by Effect:", search_by_effect),"effect_search_id"));
+  addDom(setId(makeTextEntry("Search card by Effect:", null),"effect_search_id"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Filter Level/Rank/Link-Level", "small_hint"));
@@ -623,11 +694,17 @@ function pageCreateDeck() {
   addDom(makeNode("div","Step 2: Verify your Deck Recipe","subtitle"));
   addDom(makeSpace(1));
 
+  addDom(setId(makeNode("div","","description_label"), "description"));
+  addDom(makeSpace(1));
+
   addDom(makeNode("div","Click on each card to remove it", "small_hint"));
   addDom(setId(makeNode("div","", "filter_box"),"recipe_box"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 3: Save the Deck Recipe to use it","subtitle"));
+  addDom(makeSpace(1));
+
+  addDom(setId(makeTextEntry("Deck's Name:", null), "deck_name_id"));
   addDom(makeSpace(1));
 
   addDom(makeButton("Save Deck Recipe", "wide_button", save_deck_recipe));
@@ -637,6 +714,7 @@ function pageCreateDeck() {
   addDom(makeButton("Go Back", "wide_button", pageHome));
   addDom(makeSpace(1));
 
+  updateRecipeDescription(null);
 }
 
 function setup() {
