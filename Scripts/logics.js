@@ -409,7 +409,7 @@ function cardMatchesFilter(card, s_name, s_effect, level, attribute, type){
   }
   if(type != "any"){
 
-    let card_type = card["Type"];
+    let card_type = card["Type"].toLocaleLowerCase();
 
     let type_spl = type.replace("(","").replace(")","").split(" ");
     let type_main = type_spl[0];
@@ -418,13 +418,13 @@ function cardMatchesFilter(card, s_name, s_effect, level, attribute, type){
     if(type_sub != "any" && card_type.indexOf(type_sub) == -1){
       return false;
     }else{
-      if(type_main == "Trap" && card_type.indexOf("Trap") == -1){
+      if(type_main == "trap" && card_type.indexOf("trap ") == -1){
         return false;
       }
-      if(type_main == "Spell" && card_type.indexOf("Spell") == -1){
+      if(type_main == "spell" && card_type.indexOf("spell ") == -1){
         return false;
       }
-      if(type_main == "Monster" && (card_type.indexOf("Spell") != -1 || card_type.indexOf("Trap") != -1)){
+      if(type_main == "monster" && (card_type.indexOf("spell ") != -1 || card_type.indexOf("trap") != -1)){
         return false;
       }
     }
@@ -638,7 +638,7 @@ function pageCreateDeck() {
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Filter Card Type", "small_hint"));
-  addDom(setId(makeSelect(["Any", "Monster (any)", "Monster (Normal)", "Monster (Effect)", "Monster (Tuner)", "Monster (Fusion)", "Monster (Ritual)", "Monster (Xyz)", "Monster (Link)", "Monster (Synchro)", "Monster (Pendulum)", "Spell (any)", "Spell (Normal)", "Spell (Quick-Play)", "Spell (Field)", "Spell (Continuous)", "Spell (Ritual)", "Spell (Equip)",  "Trap (any)", "Trap (Normal)", "Trap (Counter)", "Trap (Continuous)"], null),"type_id"));
+  addDom(setId(makeSelect(["Any", "Monster (Any)", "Monster (Normal)", "Monster (Effect)", "Monster (Tuner)", "Monster (Fusion)", "Monster (Ritual)", "Monster (Xyz)", "Monster (Link)", "Monster (Synchro)", "Monster (Pendulum)", "Spell (Any)", "Spell (Normal)", "Spell (Quick-Play)", "Spell (Field)", "Spell (Continuous)", "Spell (Ritual)", "Spell (Equip)",  "Trap (Any)", "Trap (Normal)", "Trap (Counter)", "Trap (Continuous)"], null),"type_id"));
   addDom(makeSpace(1));
 
   addDom(makeButton("Search Cards", "wide_button", searchCard));
