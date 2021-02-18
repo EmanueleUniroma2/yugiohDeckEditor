@@ -1,4 +1,4 @@
-var CARDS_DB =
+var CARDS_DB = 
 [
     {
         "Name": "Arrogance of Orichalcos",
@@ -250,6 +250,18 @@ var CARDS_DB =
             "DEF": 800,
             "Attribute": "DARK",
             "Effect": "If this card is Normal Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip that Dragon monster to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. If this card attacks a Defense Position monster, inflict piercing battle damage. If this card would be destroyed by battle, destroy that equipped monster, instead."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "Cyberdark Impact!",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
@@ -1057,6 +1069,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "",
+        "Img": "R326f9d84996d25f7cd41423c866d0960.",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
         "Name": "Red-Eyes Alternative Black Dragon",
         "Img": "red_eyes_alternative_black_dragon",
         "Stars": 7,
@@ -1281,7 +1305,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "During the Main Phase, you can: Fusion Summon 1 "Shaddoll" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or GY, but it cannot attack directly. Then, you can send to the GY 1 monster your opponent controls with the same Attribute as that Fusion Summoned monster. You can only use this effect of \"Shaddoll Schism\" once per turn."
+            "Effect": "During the Main Phase, you can: Fusion Summon 1 \"Shaddoll\" Fusion Monster from your Extra Deck, by banishing Fusion Materials listed on it from your field or GY, but it cannot attack directly. Then, you can send to the GY 1 monster your opponent controls with the same Attribute as that Fusion Summoned monster. You can only use this effect of \"Shaddoll Schism\" once per turn."
         }
     },
     {
