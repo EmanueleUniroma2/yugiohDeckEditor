@@ -433,6 +433,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "El Shaddoll Apkallone",
+        "Img": "El Shaddoll Apkallone",
+        "Stars": 6,
+        "Type": "Spellcaster / Fusion / Effect",
+        "Meta": {
+            "ATK": 2500,
+            "DEF": 2000,
+            "Attribute": "DARK",
+            "Effect": "2 \"Shaddoll\" monsters with different Attributes\nMust first be Fusion Summoned. Cannot be destroyed by battle. You can only use each of the following effects of \"El Shaddoll Apkallone\" once per turn.<ul><li>If this card is Special Summoned: You can target 1 face-up card on the field; negate its effects.</li><li>If this card is sent to the GY: You can add 1 \"Shaddoll\" card from your Deck or GY to your hand, then discard 1 card.</li></ul>"
+        }
+    },
+    {
         "Name": "El Shaddoll Construct",
         "Img": "El Shaddoll Construct",
         "Stars": 8,

@@ -27,6 +27,7 @@ var DECKS_LIST = [
       { "type": "Extra Deck", "name":"Cyberdarkness Dragon", "amount":2},
       { "type": "Extra Deck", "name":"el-shaddoll-winda", "amount":2},
       { "type": "Extra Deck", "name":"El Shaddoll Construct", "amount":1},
+      { "type": "Extra Deck", "name":"El Shaddoll Apkallone", "amount":1},
       { "type": "Extra Deck", "name":"Five-Headed Dragon", "amount":2},
       { "type": "Extra Deck", "name":"PSY-Framelord Omega", "amount":1},
       { "type": "Extra Deck", "name":"Starving Venom Fusion Dragon", "amount":1},
