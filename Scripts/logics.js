@@ -674,5 +674,10 @@ function pageCreateDeck() {
 }
 
 function setup() {
+
+  if(window.innerWidth < 800 || window.outerWidth < 800){
+    document.body.style.fontSize = "0.7rem";
+  }
+
   pageHome();
 }
