@@ -1,4 +1,4 @@
-var CARDS_DB = 
+var CARDS_DB =
 [
     {
         "Name": "Arrogance of Orichalcos",
@@ -229,6 +229,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Cyberdark Dragon",
+        "Img": "Cyberdark Dragon",
+        "Stars": 8,
+        "Type": "Machine / Fusion / Effect",
+        "Meta": {
+            "ATK": 1000,
+            "DEF": 1000,
+            "Attribute": "DARK",
+            "Effect": "\"Cyberdark Horn\" + \"Cyberdark Edge\" + \"Cyberdark Keel\"\nMust be Fusion Summoned. If this card is Special Summoned: Target 1 Dragon monster in your GY; equip that target to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. Gains 100 ATK for each monster in your GY. If this card would be destroyed by battle, destroy that equipped monster instead."
+        }
+    },
+    {
         "Name": "Cyberdark Edge",
         "Img": "Cyberdark Edge",
         "Stars": 4,
@@ -253,15 +265,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Cyberdark Impact!",
         "Img": "Cyberdark Impact!",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Normal)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": ""
+            "Effect": "Fusion Summon 1 \"Cyberdark Dragon\" from your Extra Deck, by shuffling 1 each of \"Cyberdark Horn\", \"Cyberdark Edge\", and \"Cyberdark Keel\" from your hand, field, and/or GY, into the Deck, as Fusion Material."
         }
     },
     {
@@ -397,6 +409,42 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "El Shaddoll Construct",
+        "Img": "El Shaddoll Construct",
+        "Stars": 8,
+        "Type": "Fairy / Fusion / Effect",
+        "Meta": {
+            "ATK": 2800,
+            "DEF": 2500,
+            "Attribute": "LIGHT",
+            "Effect": "1 \"Shaddoll\" monster + 1 LIGHT monster\nMust first be Fusion Summoned. If this card is Special Summoned: You can send 1 \"Shaddoll\" card from your Deck to the GY. At the start of the Damage Step, if this card battles a Special Summoned monster: Destroy that monster. If this card is sent to the GY: You can target 1 \"Shaddoll\" Spell/Trap in your GY; add it to your hand."
+        }
+    },
+    {
+        "Name": "El Shaddoll Winda",
+        "Img": "el-shaddoll-winda",
+        "Stars": 5,
+        "Type": "Spellcaster / Fusion / Effect",
+        "Meta": {
+            "ATK": 2200,
+            "DEF": 800,
+            "Attribute": "DARK",
+            "Effect": "1 \"Shaddoll\" monster + 1 DARK monster\nMust first be Fusion Summoned. Cannot be destroyed by an opponent's card effects. Each player can only Special Summon monster(s) once per turn while this card is face-up on the field. If this card is sent to the GY: You can target 1 \"Shaddoll\" Spell/Trap in your GY; add it to your hand."
+        }
+    },
+    {
+        "Name": "Elder Entity N'tss",
+        "Img": "Elder Entity ntess",
+        "Stars": 4,
+        "Type": "Fairy / Fusion / Effect",
+        "Meta": {
+            "ATK": 2500,
+            "DEF": 1200,
+            "Attribute": "LIGHT",
+            "Effect": "1 Synchro Monster + 1 Xyz Monster\nMust be Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. (You do not use \"Polymerization\".) Once per turn: You can Special Summon 1 Level 4 monster from your hand. If this card is sent to the GY: You can target 1 card on the field; destroy it. You can only Special Summon \"Elder Entity N'tss(s)\" once per turn."
+        }
+    },
+    {
         "Name": "The Ruin of Atlantis",
         "Img": "eternal_divine_wrath",
         "Stars": 0,
@@ -430,6 +478,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "At the start of your Main Phase 1: Banish 3 or 6 random face-down cards from your Extra Deck, face-down; draw 1 card for every 3 cards banished. For the rest of this turn after this card resolves, you cannot draw any cards by card effects."
+        }
+    },
+    {
+        "Name": "Five-Headed Dragon",
+        "Img": "Five-Headed Dragon",
+        "Stars": 12,
+        "Type": "	Dragon / Fusion / Effect",
+        "Meta": {
+            "ATK": 5000,
+            "DEF": 5000,
+            "Attribute": "DARK",
+            "Effect": "5 Dragon monsters\nMust be Fusion Summoned. Cannot be destroyed by battle with a DARK, EARTH, WATER, FIRE, or WIND monster."
         }
     },
     {
@@ -1069,15 +1129,27 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
-        "Img": "R326f9d84996d25f7cd41423c866d0960.",
-        "Stars": 0,
-        "Type": "",
+        "Name": "Predaplant Chimerafflesia",
+        "Img": "Predaplant Chimerafflesia",
+        "Stars": 7,
+        "Type": "Plant / Fusion / Effect",
         "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
+            "ATK": 2500,
+            "DEF": 2000,
+            "Attribute": "DARK",
+            "Effect": "1 \"Predaplant\" monster + 1 DARK monster\nOnce per turn: You can target 1 monster on the field with a Level less than or equal to this card's; banish it. When an attack is declared involving this card and an opponent's face-up monster: You can activate this effect; until the end of this turn, that opponent's monster loses 1000 ATK, and if it does, this card gains 1000 ATK. Once per turn, during the next Standby Phase after this card was sent to the Graveyard: You can add 1 \"Polymerization\" Spell Card or \"Fusion\" Spell Card from your Deck to your hand."
+        }
+    },
+    {
+        "Name": "PSY-Framelord Omega",
+        "Img": "PSY-Framelord Omega.",
+        "Stars": 8,
+        "Type": "Psychic / Synchro / Effect",
+        "Meta": {
+            "ATK": 2800,
+            "DEF": 2200,
+            "Attribute": "LIGHT",
+            "Effect": "1 Tuner + 1+ non-Tuner monsters\nOnce per turn, during the Main Phase (Quick Effect): You can banish both this face-up card from the field and 1 random card from your opponent's hand, face-up, until your next Standby Phase. Once per turn, during your opponent's Standby Phase: You can target 1 banished card; return it to the GY. If this card is in your GY: You can target 1 other card in the GY; shuffle both that card and this card from the GY into the Deck."
         }
     },
     {
@@ -1402,6 +1474,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "Target 1 Dragon Normal Monster in your GY; Special Summon that target. You can only activate 1 \"Silver's Cry\" per turn."
+        }
+    },
+    {
+        "Name": "Starving Venom Fusion Dragon",
+        "Img": "Starving Venom Fusion Dragon.",
+        "Stars": 8,
+        "Type": "Dragon / Fusion / Effect",
+        "Meta": {
+            "ATK": 2800,
+            "DEF": 2000,
+            "Attribute": "DARK",
+            "Effect": "2 DARK monsters on the field, except Tokens\nIf this card is Fusion Summoned: You can make this card gain ATK equal to 1 opponent's Special Summoned monster, until the end of this turn. Once per turn: You can target 1 Level 5 or higher monster your opponent controls; until the End Phase, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this Fusion Summoned card is destroyed: You can destroy all your opponent's Special Summoned monsters."
         }
     },
     {
