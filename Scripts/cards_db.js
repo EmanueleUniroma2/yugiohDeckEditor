@@ -1,4 +1,4 @@
-var CARDS_DB =
+var CARDS_DB = 
 [
     {
         "Name": "Arrogance of Orichalcos",
@@ -265,8 +265,20 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "Cyberdark Impact!",
+        "Name": "",
         "Img": "Cyberdark Impact!",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
+        }
+    },
+    {
+        "Name": "Cyberdark Impact!",
+        "Img": "Cyberdark Impact",
         "Stars": 0,
         "Type": "Spell (Normal)",
         "Meta": {
@@ -280,7 +292,7 @@ var CARDS_DB =
         "Name": "Cyberdark Inferno",
         "Img": "Cyberdark Inferno",
         "Stars": 0,
-        "Type": "",
+        "Type": "Spell (Field)",
         "Meta": {
             "ATK": 0,
             "DEF": 0,
@@ -298,6 +310,30 @@ var CARDS_DB =
             "DEF": 800,
             "Attribute": "DARK",
             "Effect": "If this card is Normal Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip that Dragon monster to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. If this card destroys an opponent's monster by battle: Inflict 300 damage to your opponent. If this card would be destroyed by battle, destroy that equipped monster, instead."
+        }
+    },
+    {
+        "Name": "Cyberdarkness Dragon",
+        "Img": "Cyberdarkness Dragon",
+        "Stars": 10,
+        "Type": "Machine / Fusion / Effect",
+        "Meta": {
+            "ATK": 2000,
+            "DEF": 2000,
+            "Attribute": "DARK",
+            "Effect": "5 \"Cyberdark\" Effect Monsters\nMust first be Fusion Summoned. If this card is Special Summoned: You can equip 1 Dragon or Machine monster from your GY to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. When your opponent activates a card or effect (Quick Effect): You can send 1 Equip Card you control to the GY; negate the activation, and if you do, destroy that card."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "cyberdarkness_dragon_by_alanmac95_db7mjm0-pre",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
@@ -484,7 +520,7 @@ var CARDS_DB =
         "Name": "Five-Headed Dragon",
         "Img": "Five-Headed Dragon",
         "Stars": 12,
-        "Type": "	Dragon / Fusion / Effect",
+        "Type": "Dragon / Fusion / Effect",
         "Meta": {
             "ATK": 5000,
             "DEF": 5000,
@@ -1150,6 +1186,18 @@ var CARDS_DB =
             "DEF": 2200,
             "Attribute": "LIGHT",
             "Effect": "1 Tuner + 1+ non-Tuner monsters\nOnce per turn, during the Main Phase (Quick Effect): You can banish both this face-up card from the field and 1 random card from your opponent's hand, face-up, until your next Standby Phase. Once per turn, during your opponent's Standby Phase: You can target 1 banished card; return it to the GY. If this card is in your GY: You can target 1 other card in the GY; shuffle both that card and this card from the GY into the Deck."
+        }
+    },
+    {
+        "Name": "",
+        "Img": "R326f9d84996d25f7cd41423c866d0960.",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": ""
         }
     },
     {
