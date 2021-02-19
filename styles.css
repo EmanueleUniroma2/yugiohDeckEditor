@@ -96,7 +96,8 @@ body{
 
 
 .text_entry{
-  min-width: 30em;
+  width: 30em;
+  max-width: 100%;
   padding: 0.5em;
 }
 
