@@ -1165,15 +1165,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "PSY-Framelord Omega",
         "Img": "PSY-Framelord Omega",
-        "Stars": 0,
-        "Type": "",
+        "Stars": 8,
+        "Type": "Psychic / Synchro / Effect",
         "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
+            "ATK": 2800,
+            "DEF": 2200,
+            "Attribute": "LIGHT",
+            "Effect": "1 Tuner + 1+ non-Tuner monsters\nOnce per turn, during the Main Phase (Quick Effect): You can banish both this face-up card from the field and 1 random card from your opponent's hand, face-up, until your next Standby Phase. Once per turn, during your opponent's Standby Phase: You can target 1 banished card; return it to the GY. If this card is in your GY: You can target 1 other card in the GY; shuffle both that card and this card from the GY into the Deck."
         }
     },
     {
@@ -1525,15 +1525,15 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
+        "Name": "Starving Venom Fusion Dragon",
         "Img": "Starving Venom Fusion Dragon",
-        "Stars": 0,
-        "Type": "",
+        "Stars": 8,
+        "Type": "Dragon / Fusion / Effect",
         "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
+            "ATK": 2800,
+            "DEF": 2000,
+            "Attribute": "DARK",
+            "Effect": "2 DARK monsters on the field, except Tokens\nIf this card is Fusion Summoned: You can make this card gain ATK equal to 1 opponent's Special Summoned monster, until the end of this turn. Once per turn: You can target 1 Level 5 or higher monster your opponent controls; until the End Phase, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this Fusion Summoned card is destroyed: You can destroy all your opponent's Special Summoned monsters."
         }
     },
     {
