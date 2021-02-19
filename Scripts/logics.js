@@ -367,6 +367,9 @@ function pageHome(){
   addDom(makeCheckBox("Allow print for card-backs (This adds 'card-backs' pages)","allow_back_check"));
   addDom(makeSpace(1));
 
+  addDom(makeNode("div","If you print card-backs, when printing select \"Flip on the <strong>short</strong> side of the paper\" to have a perfect back match.","infobox"));
+  addDom(makeSpace(1));
+
   addDom(makeNode("div","Step 3: Generate the Printable PDF","subtitle"));
   addDom(makeSpace(1));
 
