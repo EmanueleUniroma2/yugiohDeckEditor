@@ -179,8 +179,7 @@ function tell_deck() {
 function makeSelect(options, onchance){
   let s = makeNode("select",null,null);
   s.onchange = onchance;
-  s.style.padding = "0.5em 1em";
-  s.style.width = "30em";
+  s.className = "wide_select";
   for(let i = 0; i < options.length; i++){
     let o = makeNode("option",options[i], null);
     o.value = options[i];
@@ -674,10 +673,5 @@ function pageCreateDeck() {
 }
 
 function setup() {
-
-  if(window.innerWidth < 800 || window.outerWidth < 800){
-    document.body.style.fontSize = "0.7rem";
-  }
-
   pageHome();
 }

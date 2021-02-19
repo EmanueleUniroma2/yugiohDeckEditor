@@ -32,7 +32,7 @@ body{
   padding-right: 0.2em;
   text-align: center;
   border-radius: 30%;
-  line-height: 1em;  
+  line-height: 1em;
 }
 .back_btn:hover{
     background: rgba(0,0,0,0.2);
@@ -68,7 +68,13 @@ body{
 }
 
 .wide_button{
-  min-width: 30em;
+  width: 30em;
+  max-width: 100%;
+}
+.wide_select{
+  padding : 0.5em 1em;
+  width : 30em;
+  max-width: 100%;
 }
 
 .small_hint{
