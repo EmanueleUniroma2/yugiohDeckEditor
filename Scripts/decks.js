@@ -1,6 +1,40 @@
 
 var DECKS_LIST = [
   {
+    "name":"Cyberdark",
+    "cards":[
+      { "type": "Deck", "name":"Cyberdark Edge", "amount":3},
+      { "type": "Deck", "name":"Cyberdark Horn", "amount":3},
+      { "type": "Deck", "name":"Cyberdark keel", "amount":3},
+      { "type": "Deck", "name":"Cyberdark Cannon", "amount":3},
+      { "type": "Deck", "name":"Cyberdark Claw", "amount":3},
+      { "type": "Deck", "name":"Cyberdark Impact", "amount":2},
+      { "type": "Deck", "name":"Cyberdark Inferno", "amount":2},
+      { "type": "Deck", "name":"Shaddoll Hedgehog", "amount":2},
+      { "type": "Deck", "name":"Shadoll Dragon", "amount":2},
+      { "type": "Deck", "name":"Shadoll Squamata", "amount":2},
+      { "type": "Deck", "name":"Shaddoll Fusion", "amount":2},
+      { "type": "Deck", "name":"Schaddoll Schism", "amount":1},
+      { "type": "Deck", "name":"Future Fusion", "amount":3},
+      { "type": "Deck", "name":"Monster Reborn", "amount":1},
+      { "type": "Deck", "name":"Dogmatika Maximus", "amount":2},
+      { "type": "Deck", "name":"Nadir Servant", "amount":3},
+      { "type": "Deck", "name":"Call of the Haunted", "amount":1},
+      { "type": "Deck", "name":"metaverse", "amount":1},
+      { "type": "Deck", "name":"Super Polymerizzation", "amount":2},
+      { "type": "Deck", "name":"Limiter Removal", "amount":1},
+      { "type": "Extra Deck", "name":"Cyberdark Dragon", "amount":2},
+      { "type": "Extra Deck", "name":"Cyberdarkness Dragon", "amount":2},
+      { "type": "Extra Deck", "name":"el-shaddoll-winda", "amount":2},
+      { "type": "Extra Deck", "name":"El Shaddoll Construct", "amount":1},
+      { "type": "Extra Deck", "name":"Five-Headed Dragon", "amount":2},
+      { "type": "Extra Deck", "name":"PSY-Framelord Omega", "amount":1},
+      { "type": "Extra Deck", "name":"Starving Venom Fusion Dragon", "amount":1},
+      { "type": "Extra Deck", "name":"Predaplant Chimerafflesia", "amount":1},
+      { "type": "Extra Deck", "name":"Elder Entity ntess", "amount":2},
+    ]
+  },
+  {
     "name":"Orichalcos",
     "cards":[
       { "type": "Deck", "name":"orichalcos_magician_apprendice", "amount":2},
