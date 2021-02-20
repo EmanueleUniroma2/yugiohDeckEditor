@@ -74,10 +74,22 @@ function getDeckByName(deck_to_print){
   return deck;
 }
 
-function displayDeck(deck_to_print, disable_backs){
+function pagePrintableDeck() {
 
   document.body.style.background = "transparent";
   document.body.style.margin = "0";
+
+  let deck_to_print = localStorage.getItem("display_name");
+  let disable_backs = localStorage.getItem("allow_backs") != "true";
+
+  if(deck_to_print == null || disable_backs == null){
+    return;
+  }
+
+  displayDeck(deck_to_print, disable_backs)
+}
+
+function displayDeck(deck_to_print, disable_backs){
 
   let deck = getDeckByName(deck_to_print);
 
@@ -125,20 +137,16 @@ function displayDeck(deck_to_print, disable_backs){
 }
 
 function clearPage(){
+
+  document.body.style.background = "";
+  document.body.style.margin = "";
+
   while(document.body.firstChild){
     document.body.removeChild(document.body.firstChild);
   }
 }
 
-function process_deck() {
 
-  let deck_name = document.getElementById("chosen_id").value;
-  let allow_backs = document.getElementById("allow_back_check").checked;
-
-  clearPage();
-
-  displayDeck(deck_name, !allow_backs);
-}
 
 function deck_descr(deck_to_print){
 
@@ -351,7 +359,7 @@ function pageHome(){
   addDom(makeNode("div","Step 1 (optional): Create your own Deck","subtitle"));
   addDom(makeSpace(1));
 
-  addDom(makeButton("Create Deck", "wide_button", pageCreateDeck));
+  addDom(makeButton("Create Deck", "wide_button", gotoCreate));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 2: Pick one Deck from the list","subtitle"));
@@ -375,7 +383,7 @@ function pageHome(){
   addDom(makeNode("div","When you are ready, hit the \"Generate Printable Deck Page\" button to see the ready-to-print Deck page. For best results, you must save the whole page by right-clicking the page and printing as PDF. Remember to use A4 format and no margins.","infobox"));
   addDom(makeSpace(1));
 
-  addDom(makeButton("Generate Printable Deck Page", "wide_button", process_deck));
+  addDom(makeButton("Generate Printable Deck Page", "wide_button", gotoProcess));
   addDom(makeSpace(1));
 
   tell_deck();
@@ -611,8 +619,23 @@ function addFilteredBoxToRecipe(card){
 }
 
 function makeBackTitle(txt) {
-  return makeNode("div","<div class=\"back_btn\" onclick=\"pageHome();\">ᐊ</div><div style=\"display: inline-block;\">" + txt + "</div>","title");
+  return makeNode("div","<div class=\"back_btn\" onclick=\"goBack();\">ᐊ</div><div style=\"display: inline-block;\">" + txt + "</div>","title");
 }
+
+function gotoCreate() {
+  setNavigation("create");
+}
+
+function gotoProcess() {
+
+  let deck_name = document.getElementById("chosen_id").value;
+  let allow_backs = document.getElementById("allow_back_check").checked;
+  localStorage.setItem("display_name", deck_name);
+  localStorage.setItem("allow_backs", allow_backs.toString());
+
+  setNavigation("printable_deck");
+}
+
 
 function pageCreateDeck() {
 
@@ -672,6 +695,75 @@ function pageCreateDeck() {
   updateRecipeDescription(null);
 }
 
+function getUrlSection(segment) {
+
+    if (segment != 0 && segment != 1) {
+        return;
+    }
+
+    let default_page = "home";
+    let curr_url = decodeURI(window.location.href);
+
+
+    // has page defined
+    if (curr_url.split("#").length > 1) {
+        return curr_url.split("#")[segment];
+    } else {
+        window.location.href = encodeURI(window.location.href + "#" + default_page);
+        return default_page;
+    }
+}
+
+
+
+function goBack() {
+  history.back();
+}
+
+function setNavigation(pagerequest) {
+
+    if (pagerequest != getUrlSection(1)) {
+        let new_url = encodeURI(getUrlSection(0) + "#" + pagerequest);
+        history.pushState(null, null, new_url);
+
+        pageNavigate();
+    }
+
+    return ''; // chrome requires return value
+}
+
+function pageNavigate() {
+
+    clearPage();
+
+    let page = getUrlSection(1);
+
+    let page_no_args = page.split("?")[0];
+
+    if (page_no_args == "home") {
+        pageHome();
+        return;
+    }
+    if (page_no_args == "create") {
+        pageCreateDeck();
+        return;
+    }
+    if (page_no_args == "printable_deck") {
+        pagePrintableDeck();
+        return;
+    }
+
+
+    missingPage();
+}
+
+var setupDone = false;
 function setup() {
-  pageHome();
+
+  if(!setupDone){
+    window.addEventListener('hashchange', pageNavigate, false);
+      setupDone = true;
+  }
+
+  pageNavigate();
 }
