@@ -21,7 +21,9 @@ var DECKS_LIST = [
       { "type": "Deck", "name":"Kimoto Crystal Ghost", "amount":3},
       { "type": "Deck", "name":"Kimoto Cursed King", "amount":2},
       { "type": "Deck", "name":"Big Lovely Family", "amount":3},
-      { "type": "Deck", "name":"Ancient Waboku", "amount":3},
+      { "type": "Deck", "name":"Ancient Waboku", "amount":2},
+      { "type": "Deck", "name":"metaverse", "amount":1},
+      { "type": "Deck", "name":"terraforming", "amount":1},
     ]
   },
   {
