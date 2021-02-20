@@ -1413,7 +1413,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Target 1 face-up monster you control; inflict 800 damage to your opponent for each card equiped to that monster. During the turn this card is activated there is no Battle Phase."
+            "Effect": "Target 1 face-up monster you control; inflict 800 damage to your opponent for each card equiped to that monster. You can only activate \u201cPunishment of the Retro Guard\u201d once per turn."
         }
     },
     {
