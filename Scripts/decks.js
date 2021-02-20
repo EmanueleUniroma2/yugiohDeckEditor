@@ -1,6 +1,30 @@
 
 var DECKS_LIST = [
   {
+    "name":"Kimoto",
+    "cards":[
+      { "type": "Deck", "name":"Punishment of the Retro Guard", "amount":3},
+      { "type": "Deck", "name":"kimoto_fierce_dragon", "amount":2},
+      { "type": "Deck", "name":"Kimoto Wise Frog", "amount":2},
+      { "type": "Deck", "name":"Kimoto Vengeance", "amount":3},
+      { "type": "Deck", "name":"Kimoto Sweet Genie", "amount":3},
+      { "type": "Deck", "name":"Kimoto Support Slime", "amount":2},
+      { "type": "Deck", "name":"Kimoto Spear Racoon", "amount":2},
+      { "type": "Deck", "name":"Kimoto Realm", "amount":3},
+      { "type": "Deck", "name":"Kimoto Prime Discipels", "amount":2},
+      { "type": "Deck", "name":"Kimoto Prime Ape", "amount":2},
+      { "type": "Deck", "name":"Kimoto Nursing", "amount":3},
+      { "type": "Deck", "name":"Kimoto Lazy Oatzel", "amount":2},
+      { "type": "Deck", "name":"Kimoto Lantern Girl", "amount":2},
+      { "type": "Deck", "name":"Kimoto Fat Twin Dragons", "amount":2},
+      { "type": "Deck", "name":"Kimoto Elegant Bark", "amount":2},
+      { "type": "Deck", "name":"Kimoto Crystal Ghost", "amount":3},
+      { "type": "Deck", "name":"Kimoto Cursed King", "amount":2},
+      { "type": "Deck", "name":"Big Lovely Family", "amount":3},
+      { "type": "Deck", "name":"Ancient Waboku", "amount":3},
+    ]
+  },
+  {
     "name":"Cyberdark",
     "cards":[
       { "type": "Deck", "name":"Cyberdark Edge", "amount":3},

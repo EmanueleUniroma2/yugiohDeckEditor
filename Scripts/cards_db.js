@@ -1,6 +1,18 @@
 var CARDS_DB = 
 [
     {
+        "Name": "Ancient Waboku",
+        "Img": "Ancient Waboku",
+        "Stars": 0,
+        "Type": "Trap (Continuous)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "During your opponent\u2019s turn, your monsters cannot be destroyed and you take no battle damage. During each of your End Phase, destroy 1 face-up Spell Card you control or destroy this card."
+        }
+    },
+    {
         "Name": "Arrogance of Orichalcos",
         "Img": "arrogance_of_orichalcos",
         "Stars": 0,
@@ -46,6 +58,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": ""
+        }
+    },
+    {
+        "Name": "Big Lovely Family",
+        "Img": "Big Lovely Family",
+        "Stars": 0,
+        "Type": "",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "If you control 2 monsters with the same archetype, you can Special Summon up to 2 Level 3 or lower monsters with the same archetype and different names from your hand or Deck."
         }
     },
     {
@@ -625,6 +649,198 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Kimoto Crystal Ghost",
+        "Img": "Kimoto Crystal Ghost",
+        "Stars": 3,
+        "Type": "Rock / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "EARTH",
+            "Effect": "During your Main Phase 1, if this card was Normal Summoned this turn: You can Tribute this card; draw 2 cards, then it becomes the End Phase. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. A monster equiped with this card gains 2000 DEF."
+        }
+    },
+    {
+        "Name": "Kimoto Cursed King",
+        "Img": "Kimoto Cursed King",
+        "Stars": 10,
+        "Type": "Zombie / Effect",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "DARK",
+            "Effect": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 5 or more Kimoto monsters with different names in your GY. Once per turn, you can send all other Kimoto monster on the field to the GY; target up to 5 Kimoto monsters that can be equiped by their own effect in your GY; equip them to this card."
+        }
+    },
+    {
+        "Name": "Kimoto Elegant Bark",
+        "Img": "Kimoto Elegant Bark",
+        "Stars": 3,
+        "Type": "Beast / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "EARTH",
+            "Effect": "Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. A monster equiped with this card can attack all your opponent\u2019s monsters, once each. When a monster equiped with this card  battles a Defense Position monster, inflict piercing damage."
+        }
+    },
+    {
+        "Name": "Kimoto Fat Twin Dragons",
+        "Img": "Kimoto Fat Twin Dragons",
+        "Stars": 3,
+        "Type": "Dragon / Flip / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "WIND",
+            "Effect": "FLIP: Equip 1 Kimoto monster that can be equiped by its own effect from your hand or Deck to 1 of your face-up monsters.\nCannot be destroyed by battle. When an opponent's monster declares an attack, tribute this card: Destroy all your opponent's Attack Position monsters."
+        }
+    },
+    {
+        "Name": "Kimoto Lantern Girl",
+        "Img": "Kimoto Lantern Girl",
+        "Stars": 3,
+        "Type": "Spellcaster / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "LIGHT",
+            "Effect": "Discard 1 card; destroy 1 card on the field. When you Summon this card, you can add 1 Kimoto Spell Card from your Deck to your hand. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. When a monster equiped with this card battles an opponent\u2019s monster, it gains ATK equal to the opponent\u2019s monster ATK during damage calculation only."
+        }
+    },
+    {
+        "Name": "Kimoto Lazy Oatzel",
+        "Img": "Kimoto Lazy Oatzel",
+        "Stars": 3,
+        "Type": "Winged Beast / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "WIND",
+            "Effect": "Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. A monster equiped with this card loses 1000 ATK and can attack your opponent directly."
+        }
+    },
+    {
+        "Name": "Kimoto Nursing",
+        "Img": "Kimoto Nursing",
+        "Stars": 0,
+        "Type": "Spell (Continuous)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "Once per turn, add 1 Kimoto monster from your GY to your hand; if you control \u201cKimoto Realm\u201d, add 1 more Kimoto monster from your GY to your hand."
+        }
+    },
+    {
+        "Name": "Kimoto Prime Ape",
+        "Img": "Kimoto Prime Ape",
+        "Stars": 3,
+        "Type": "Beast-Warrior / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "EARTH",
+            "Effect": "This card gains 1000 ATK for each equiped Kimoto monster. When this card would be destroyed, you can destroy one of its equiped Kimoto monsters instead. When this card is Summoned, you can equip to it any number of Kimoto monsters from your hand. When this card is sent to the GY: Special Summon 1 \u201cKimoto Prime Discipels\u201d from youd hand or Deck."
+        }
+    },
+    {
+        "Name": "Kimoto Prime Discipels",
+        "Img": "Kimoto Prime Discipels",
+        "Stars": 3,
+        "Type": "Beast-Warrior / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "EARTH",
+            "Effect": "When this card is Summoned, target 1 Kimoto monster that can be equiped by its own effect in your GY: Equip that monster to this card. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. Once per turn, you can inflict damage to your opponent equal to to the equiped monster ATK; that monster cannot attack this turn."
+        }
+    },
+    {
+        "Name": "Kimoto Realm",
+        "Img": "Kimoto Realm",
+        "Stars": 0,
+        "Type": "Spell (Field)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "You can Special Summon Kimoto monsters from your Spell/Trap Card Zones without using their effect. Every time a Kimoto monster is sent from your Spell/Trap Card Zone to the GY, Special Summon 1 Kimoto monster from your Deck; if that monster can be equiped by its own effect, you can equip that monster to a face-up monster you control. When this card would leave the field, send 1 Kimoto monster from your Deck to the GY instead. When a Kimoto monster would be banished because of one of your opponent\u2019s card effect(s), add it to your hand instead."
+        }
+    },
+    {
+        "Name": "Kimoto Spear Racoon",
+        "Img": "Kimoto Spear Racoon",
+        "Stars": 3,
+        "Type": "Beast-Warrior / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "DARK",
+            "Effect": "Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. When this card is equiped to a monster you control, destroy all face-down monsters on your opponent\u2019s side of the field. When this equiped card is Special Summoned, destroy all face-up monsters on your opponent\u2019s side of the field."
+        }
+    },
+    {
+        "Name": "Kimoto Support Slime",
+        "Img": "Kimoto Support Slime",
+        "Stars": 3,
+        "Type": "Fairy / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "WIND",
+            "Effect": "When 1 face-up monster you control is attacked or targeted by a card effect (Quick Effect): Equip this card to that monster from your hand. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. A monster equiped with this card gains 3000 ATK and cannot attack. Negate all card effect(s) that target the equiped monsters, and if you do, destroy those cards."
+        }
+    },
+    {
+        "Name": "Kimoto Sweet Genie",
+        "Img": "Kimoto Sweet Genie",
+        "Stars": 3,
+        "Type": "Fairy / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "LIGHT",
+            "Effect": "Discard 1 card; add 1 Kimoto monster from your Deck to your hand. You can equip Kimoto monsters that can be equiped by their own effect directly from your hand. You can banish this card from your GY during the End Phase of the turn this card was sent to the GY: Add 1 Kimoto Spell Card from your Deck to your hand."
+        }
+    },
+    {
+        "Name": "Kimoto War Tactics",
+        "Img": "Kimoto Vengeance",
+        "Stars": 0,
+        "Type": "Spell (Quick-Play)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "When a monster you control battles, before damage calculation: Target one Kimoto monster in your Spell/Trap Card Zones; destroy it, then equip another Kimoto monster that can be equiped by its own effect to 1 face-up monster you control from your hand or Deck."
+        }
+    },
+    {
+        "Name": "Kimoto Wise Frog",
+        "Img": "Kimoto Wise Frog",
+        "Stars": 3,
+        "Type": "Aqua / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "WATER",
+            "Effect": "When you Summon this card, you can Special Summon 1 Kimoto monster from your hand or Deck. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. When a card or effect is activated (Quick Effect): Send this equiped card to the GY; negate that card effect and and if you do, destroy that card."
+        }
+    },
+    {
+        "Name": "Kimoto Fierce Dragon",
+        "Img": "kimoto_fierce_dragon",
+        "Stars": 3,
+        "Type": "Dragon / Effect",
+        "Meta": {
+            "ATK": 800,
+            "DEF": 1000,
+            "Attribute": "FIRE",
+            "Effect": "When you Summon this card, you tan target 1 Kimoto monster in your GY: add it to your hand. Once per turn, you can either equip this card to a face-up monster you control, or Special Summon this equiped card on your field. A monster equiped with this card gains 1000 ATK and gains one additional attack each Battle Phase."
+        }
+    },
+    {
         "Name": "Levonia, Chaos Prince of Orichalcos",
         "Img": "levonia_the_orichalcos_chaos_prince",
         "Stars": 8,
@@ -1186,6 +1402,18 @@ var CARDS_DB =
             "DEF": 2200,
             "Attribute": "LIGHT",
             "Effect": "1 Tuner + 1+ non-Tuner monsters\nOnce per turn, during the Main Phase (Quick Effect): You can banish both this face-up card from the field and 1 random card from your opponent's hand, face-up, until your next Standby Phase. Once per turn, during your opponent's Standby Phase: You can target 1 banished card; return it to the GY. If this card is in your GY: You can target 1 other card in the GY; shuffle both that card and this card from the GY into the Deck."
+        }
+    },
+    {
+        "Name": "Punishment of the Retro Guard",
+        "Img": "Punishment of the Retro Guard",
+        "Stars": 0,
+        "Type": "Trap (Normal)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "Target 1 face-up monster you control; inflict 800 damage to your opponent for each card equiped to that monster. During the turn this card is activated there is no Battle Phase."
         }
     },
     {
