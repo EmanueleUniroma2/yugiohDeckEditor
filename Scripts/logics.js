@@ -175,7 +175,7 @@ function summarizeDeck(count_deck, count_extra, count_tokens) {
   let c2 = +count_extra;
   let c3 = +count_tokens;
   let tot = c1 + c2 + c3;
-  return "Deck has the follwing cards structure:<ul><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Total card(s): </div>" + tot.toString() + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Deck card(s): </div>" + count_deck  + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Extra Deck  card(s): </div>" + count_extra + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Token card(s): </div>" + count_tokens + "</li></ul>";
+  return "Deck has the following cards structure:<ul><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Total card(s): </div>" + tot.toString() + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Deck card(s): </div>" + count_deck  + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Extra Deck  card(s): </div>" + count_extra + "</li><li><div style=\"display:inline-block; padding-top:0.3em; min-width:10em;\">Token card(s): </div>" + count_tokens + "</li></ul>";
 }
 
 function tell_deck() {
@@ -353,7 +353,7 @@ function pageHome(){
   clearPage();
   document.body.style.margin = "2rem";
 
-  addDom(makeNode("div","Yi Gi Oh - Print Your Deck","title"));
+  addDom(makeNode("div","Yu Gi Oh - Print Your Deck","title"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","Step 1 (optional): Create your own Deck","subtitle"));
