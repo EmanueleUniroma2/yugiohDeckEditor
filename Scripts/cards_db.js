@@ -417,7 +417,7 @@ var CARDS_DB =
             "ATK": 4000,
             "DEF": 4000,
             "Attribute": "DARK",
-            "Effect": "Cannot be Normal Summoned or Set. Can only be Special Summoned (from your hand) by banishing 1 \"The Ruin of Atlantis\" you control with 4 or more \"Wrath\" counters on it, and cannot be Special Summoned in other ways. This card Summon cannot be negated; cards and effects cannot be activated in response to this card Summon. Pay 2000 Life Points: Flip all other face-up cards on the field except Field Spell Cards; destroy all face-down cards on the field; cards and effects cannot be activated untill this effect resolves."
+            "Effect": "Cannot be Normal Summoned or Set. Can only be Special Summoned (from your hand) by banishing 1 \u201cThe Ruin of Atlantis\u201d you control with 3 or more \u201cWrath\u201d counters on it, or by the effect of \u201cThe Ruin of Atlantis\u201d, and cannot be Special Summoned in other ways. This card Summon cannot be negated. Unaffected by Spell/Trap Cards. Pay 2000 Life Points: Flip all other face-up cards on the field except Field Spell Cards; destroy all face-down cards on the field; cards and effects cannot be activated untill this effect resolves."
         }
     },
     {
@@ -513,7 +513,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Once per Duel, pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by your opponent's cards. Place one \"Wrath\" counter on this card each time any of the following condition is met:<ul><li>A Level 8 or higher monster on your field is destroyed.</li><li>You activate 1 \"Orichalcos\" Field Spell Card.</li><li>You took 2000 or more damage.</li><li>Once per Duel: You have 10 or more cards in your GY.</li></ul>"
+            "Effect": "Pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by other cards. Place one \u201cWrath\u201d counter on this card each time any of the following condition is met:<ul><li>A Level 7 or higher monster on your field is destroyed or banished.</li><li>You activated 1 \u201cOrichalcos\u201d Field Spell Card.</li><li>During the End Phase: You took 2000 or more total damage this turn.</li><li>Once per Duel: You have 10 or more cards in your GY.</li></ul>Remove 1 \u201cWrath\u201d counter from this card; destroy 1 card on the field. You can banish this card with 4 or more \u201cWrath\u201c counters on it: Special Summon 1 \u201cDivine Basilisk Geh\u201d from your Deck."
         }
     },
     {
