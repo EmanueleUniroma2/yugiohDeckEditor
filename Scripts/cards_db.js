@@ -1921,6 +1921,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Triton of Atlantis",
+        "Img": "triton_of_atlantis",
+        "Stars": 1,
+        "Type": "Sea Serpent / Link / Effect",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "WATER",
+            "Effect": "1 Normal Summoned monster\nOnce per turn, send 1 monster from your Deck to the GY: Add 1 \u201cAtlantis\u201d card from your Deck to your hand. During your opponent\u2019s Standby Phase, Tribute this card: There is no Battle Phase this turn."
+        }
+    },
+    {
         "Name": "Union Carrier",
         "Img": "Union Carrier",
         "Stars": 2,
