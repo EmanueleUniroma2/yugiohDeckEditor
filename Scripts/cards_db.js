@@ -513,7 +513,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by other cards. Place one \u201cWrath\u201d counter on this card each time any of the following condition is met:<ul><li>A Level 7 or higher monster on your field is destroyed or banished.</li><li>You activated 1 \u201cOrichalcos\u201d Field Spell Card.</li><li>During the End Phase: You took 2000 or more total damage this turn.</li><li>Once per Duel: You have 10 or more cards in your GY.</li></ul>Remove 1 \u201cWrath\u201d counter from this card; destroy 1 card on the field. You can banish this card with 4 or more \u201cWrath\u201c counters on it: Special Summon 1 \u201cDivine Basilisk Geh\u201d from your Deck."
+            "Effect": "Pay 1000 Life Points to activate. The activation of this card cannot be negated. Unaffected by your opponent\u2019s cards. Place one \u201cWrath\u201d counter on this card each time any of the following condition is met:<ul><li>A Level 7 or higher monster on your field is destroyed or banished.</li><li>You activated 1 \u201cOrichalcos\u201d Field Spell Card.</li><li>During the End Phase: You took 2000 or more total damage this turn.</li><li>Once per Duel: You have 10 or more cards in your GY.</li></ul>Remove 1 \u201cWrath\u201d counter from this card; destroy 1 card on the field. You can banish this card with 4 or more \u201cWrath\u201c counters on it: Special Summon 1 \u201cDivine Basilisk Geh\u201d from your Deck."
         }
     },
     {
