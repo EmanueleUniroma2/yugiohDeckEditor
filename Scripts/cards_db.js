@@ -649,6 +649,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Infiltrate of Atlantis",
+        "Img": "Infiltrate_of_atlantis",
+        "Stars": 4,
+        "Type": "Spellcaster / Effect",
+        "Meta": {
+            "ATK": 1200,
+            "DEF": 1300,
+            "Attribute": "LIGHT",
+            "Effect": "This card is always considered an \u201cOrichalcos\u201d monster. When this card is Normal Summoned, you can Special Summon any number of \u201cInfiltrate of Atlantis\u201d from your hand or Deck; destroy those cards during the End Phase. This card can attack your opponent directly, but when it does for this effect, consider half its ATK during damage calculation."
+        }
+    },
+    {
         "Name": "Ironscale, Warden of Orichalcos",
         "Img": "ironscale_dragonfolk",
         "Stars": 8,

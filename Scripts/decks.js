@@ -65,6 +65,7 @@ var DECKS_LIST = [
     "name":"Orichalcos",
     "cards":[
       { "type": "Deck", "name":"orichalcos_magician_apprendice", "amount":2},
+      { "type": "Deck", "name":"Infiltrate_of_atlantis", "amount":3},
       { "type": "Deck", "name":"Terror of Atlantis", "amount":1},
       { "type": "Deck", "name":"burning_will_for_the_seal", "amount":2},
       { "type": "Deck", "name":"arrogance_of_orichalcos", "amount":2},
