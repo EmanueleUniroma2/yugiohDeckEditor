@@ -1245,7 +1245,7 @@ var CARDS_DB =
             "ATK": 300,
             "DEF": 300,
             "Attribute": "DARK",
-            "Effect": "When this card is sent to the GY, draw 1 card. Once per turn, pay 400 Life Points: Special Summon this card from your GY. You can increase the Level of this card by payng 200 Life Points for each added Level."
+            "Effect": "When this card is sent to the GY, draw 1 card. Once per turn, pay 600 Life Points: Special Summon this card from your GY. You can increase the Level of this card by paying 200 Life Points for each added Level."
         }
     },
     {
