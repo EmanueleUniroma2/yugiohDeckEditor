@@ -108,6 +108,26 @@ body{
   max-width: 30em;
 }
 
+.print_deck_button{
+  position: absolute;
+  left: 4em;
+  top: 1em;
+  border: 1px solid;
+  min-width: 10em;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(188, 207, 245, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.print_deck_button:hover{
+  background-color: rgba(148, 169, 210, 0.4);
+}
+.print_deck_button:active{
+  background-color: rgba(99, 119, 158, 0.4);
+}
+
 .card_in_recipe{
   width: 4em;
   display: inline-block;

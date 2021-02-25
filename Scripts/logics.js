@@ -89,6 +89,29 @@ function pagePrintableDeck() {
   displayDeck(deck_to_print, disable_backs)
 }
 
+function doPrintDeck() {
+  window.print();
+}
+
+function reshowButton() {
+  let b = document.getElementById("print_deck_button");
+  b.style.display = "block";
+}
+
+function printDeck() {
+  setTimeout(doPrintDeck,500);
+  window.onafterprint = reshowButton;
+  let b = document.getElementById("print_deck_button");
+  b.style.display = "none";
+}
+
+function addPrintAbsoButton() {
+  let b = makeNode("div","Print Deck", "print_deck_button");
+  b.onclick = printDeck;
+  b.id = "print_deck_button";
+  document.body.append(b);
+}
+
 function displayDeck(deck_to_print, disable_backs){
 
   let deck = getDeckByName(deck_to_print);
@@ -118,6 +141,7 @@ function displayDeck(deck_to_print, disable_backs){
     }
   }
 
+  addPrintAbsoButton();
 
   let deck_padding_perfect = 9 - cards%9;
   if(deck_padding_perfect != 9){
