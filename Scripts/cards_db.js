@@ -1293,7 +1293,7 @@ var CARDS_DB =
             "ATK": 200,
             "DEF": 200,
             "Attribute": "DARK",
-            "Effect": "When 1 \"Orichalcos\" Field Spell you control would leave the field (Quick Effect): discard this card instead. This card can attack your opponent directly. When this card is Special Summoned from your GY, increase its ATK by 1000 untill the End Phase. When this card leaves your field, add 1 \"Atlantis\" card from your Deck to your hand."
+            "Effect": "When 1 \u201cOrichalcos\u201d Field Spell you control would leave the field (Quick Effect): discard this card instead. When an opponent's monster declares a direct attack: You can Special Summon this card from your hand, then end the Battle Phase. If you control \u201cThe Seal of Orichalcos\u201d, this card can attack your opponent directly. When this card is Special Summoned from your GY, increase its ATK by 1000 untill the End Phase."
         }
     },
     {
