@@ -1833,7 +1833,7 @@ var CARDS_DB =
             "ATK": 3000,
             "DEF": 2500,
             "Attribute": "WATER",
-            "Effect": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 4 or more \"Orichalcos\" monsters with different names in your GY. When you draw this card from your Deck, you can reveal it to your oponent; shuffle this card into your Deck, then add 1 \"Atlantis\" card from your Deck to your hand, except \"Sui Ryu, the Atlantis Terror\"."
+            "Effect": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 4 or more \"Orichalcos\" monsters with different names in your GY. Unaffected by other monsters effects. This card can attack every monster your opponent controls, one time each. When this card in Attack Position battles a monster with higher ATK, your opponent takes the battle damage you would receive."
         }
     },
     {
