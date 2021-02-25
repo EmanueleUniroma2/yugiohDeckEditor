@@ -337,18 +337,6 @@ var CARDS_DB =
         }
     },
     {
-        "Name": "",
-        "Img": "cyberdarkness_dragon_by_alanmac95_db7mjm0-pre",
-        "Stars": 0,
-        "Type": "",
-        "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
-        }
-    },
-    {
         "Name": "Darkness Metal, the Dragon of Dark Steel",
         "Img": "darkness_metal_the_dragon_of_dark_steel",
         "Stars": 4,
@@ -541,6 +529,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Feinor The Orichalcos Beast",
+        "Img": "Feinor_the_orichalcos_beast",
+        "Stars": 9,
+        "Type": "Sea Serpent / Fusion / Effect",
+        "Meta": {
+            "ATK": 3500,
+            "DEF": 2500,
+            "Attribute": "DARK",
+            "Effect": "4 \u201cOrichalcos\u201d monsters with combined ATK higher than 4000\nThis card\u2019s effects cannot be negated. When this card is Summoned, you can activate 1 \u201cThe Ruin of Atlantis\u201d from your hand or Deck and if you do, place 1 \u201cWrath\u201d counter on it. When this card battles an opponent monster, consider only that monster\u2019s original ATK during damage calculation."
+        }
+    },
+    {
         "Name": "Five-Headed Dragon",
         "Img": "Five-Headed Dragon",
         "Stars": 12,
@@ -621,7 +621,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": -1,
             "Attribute": "DARK",
-            "Effect": "3 \"Orichalcos\" monsters\nMust first be Special Summoned (from your Extra Deck) by sending the above cards from your field to the GY. (You do not use \"Polymerization\"). The original DEF of this card is equal to double the combined DEF values of all monsters used as Fusion Material to Fusion Summon this card (or 2400 if Summoned in other ways). When this card is Summoned, you can add 1 Spell Card from your GY to your hand. If this card is changed to Attack Position, destroy this card and inflict damage to your opponent equal to half this card original DEF."
+            "Effect": "3 \u201cOrichalcos\u201d monsters\nThe original DEF of this card is equal to the combined DEF values of all monsters used as Fusion Material to Fusion Summon this card (or 2400 if Summoned in other ways). When this card is Summoned, you can add 1 Spell Card from your GY to your hand. If this card is changed to Attack Position, destroy this card and inflict damage to your opponent equal to half this card original DEF."
         }
     },
     {
@@ -646,6 +646,18 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "Target 1 \"Red-Eyes Black Dragon\" in your Monster Zone; inflict damage to your opponent equal to the original ATK of that \"Red-Eyes Black Dragon\". \"Red-Eyes Black Dragon\" cannot attack the turn you activate this card."
+        }
+    },
+    {
+        "Name": "Ironscale, Warden of Orichalcos",
+        "Img": "ironscale_dragonfolk",
+        "Stars": 8,
+        "Type": "Dragon / Fusion / Effect",
+        "Meta": {
+            "ATK": 1300,
+            "DEF": 2300,
+            "Attribute": "WIND",
+            "Effect": "2 \u201cOrichalcos\u201d monsters\nWhen this card is Summoned, add 1 Equip Spell Card from your Deck to your hand. This card can attack all your opponent\u2019s monsters, one time each. When this card declares an attacks, is unaffected by your opponent\u2019s cards until the end of the Damage Step. If you control \u201cThe Seal of Orichalcos\u201d this card gains 500 ATK for each card on your opponent\u2019s field."
         }
     },
     {
@@ -1369,6 +1381,18 @@ var CARDS_DB =
         }
     },
     {
+        "Name": "Ancient Seal Fusion",
+        "Img": "polymerization_orichalcos",
+        "Stars": 0,
+        "Type": "Spell (Normal)",
+        "Meta": {
+            "ATK": 0,
+            "DEF": 0,
+            "Attribute": "",
+            "Effect": "Fusion Summon 1 Fusion Monster that lists \u201cOrichalcos\u201d monsters as materials from your Extra Deck, using monsters from your hand, Deck, or field as Fusion Materials. You cannot Normal or Special Summon other monsters the turn you activate this card. You can only activate 1 \"Ancient Seal Fusion\" per turn."
+        }
+    },
+    {
         "Name": "Pot of Desires",
         "Img": "Pot of Desires",
         "Stars": 0,
@@ -1414,18 +1438,6 @@ var CARDS_DB =
             "DEF": 0,
             "Attribute": "",
             "Effect": "Target 1 face-up monster you control; inflict 800 damage to your opponent for each card equiped to that monster. You can only activate \u201cPunishment of the Retro Guard\u201d once per turn."
-        }
-    },
-    {
-        "Name": "",
-        "Img": "R326f9d84996d25f7cd41423c866d0960.",
-        "Stars": 0,
-        "Type": "",
-        "Meta": {
-            "ATK": 0,
-            "DEF": 0,
-            "Attribute": "",
-            "Effect": ""
         }
     },
     {
@@ -1754,18 +1766,6 @@ var CARDS_DB =
     },
     {
         "Name": "Starving Venom Fusion Dragon",
-        "Img": "Starving Venom Fusion Dragon.",
-        "Stars": 8,
-        "Type": "Dragon / Fusion / Effect",
-        "Meta": {
-            "ATK": 2800,
-            "DEF": 2000,
-            "Attribute": "DARK",
-            "Effect": "2 DARK monsters on the field, except Tokens\nIf this card is Fusion Summoned: You can make this card gain ATK equal to 1 opponent's Special Summoned monster, until the end of this turn. Once per turn: You can target 1 Level 5 or higher monster your opponent controls; until the End Phase, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this Fusion Summoned card is destroyed: You can destroy all your opponent's Special Summoned monsters."
-        }
-    },
-    {
-        "Name": "Starving Venom Fusion Dragon",
         "Img": "Starving Venom Fusion Dragon",
         "Stars": 8,
         "Type": "Dragon / Fusion / Effect",
@@ -1797,7 +1797,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Neither player can declare an attack with the equiped monster or activate its effect(s). If this card is equiped to an \"Orichalcos\" monster, this card previous effect becomes: Increase the equiped monster ATK by 600. You can pay 500 Life Points: Add this card to your hand from your GY."
+            "Effect": "Neither player can declare an attack with the equiped monster or activate its effect(s). If this card is equiped to an \u201cOrichalcos\u201d monster, this card previous effect becomes: Increase the equiped monster ATK by 800; if the equiped monster is destroyed in battle, inflict to your opponent damage equal to the amount of battle damage you took. You can pay 500 Life Points: Add this card to your hand from your GY."
         }
     },
     {
