@@ -1389,7 +1389,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Fusion Summon 1 Fusion Monster that lists \u201cOrichalcos\u201d monsters as materials from your Extra Deck, using monsters from your hand, Deck, or field as Fusion Materials. You cannot Normal or Special Summon other monsters the turn you activate this card. You can only activate 1 \"Ancient Seal Fusion\" per turn."
+            "Effect": "Fusion Summon 1 Fusion Monster that lists \u201cOrichalcos\u201d monsters as materials from your Extra Deck, using monsters from your hand, or field as Fusion Materials; if you control \u201cThe Seal of Orichalcos\u201d you can also use monsters from your Deck as materials. During your End Phase, pay 500 Life Points to add this card to your hand from your GY."
         }
     },
     {
