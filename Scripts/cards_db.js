@@ -1329,7 +1329,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 0,
             "Attribute": "",
-            "Effect": "Eequip only to a Spellcaster-Type monster. Target 1 card on the field; destroy that card, and if it was a monster card, inflict to your opponent damage equal to half that card\u2019s ATK; the equiped monster cannot declare an attack during the turn this effect resolved. If you control \u201cThe Seal of Orichalcos\u201d, you can send this card and the equiped monster to the GY: draw 2 cards."
+            "Effect": "Eequip only to a Spellcaster-Type monster. Target 1 card on the field; destroy that card, and if it was a Monster Card, inflict to your opponent damage equal to half that card\u2019s ATK; the equiped monster cannot declare an attack during the turn this effect resolved. If you control \u201cThe Seal of Orichalcos\u201d, you can send this card and the equiped monster to the GY: draw 2 cards."
         }
     },
     {
