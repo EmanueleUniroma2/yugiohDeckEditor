@@ -652,12 +652,12 @@ var CARDS_DB =
         "Name": "Infiltrate of Atlantis",
         "Img": "Infiltrate_of_atlantis",
         "Stars": 4,
-        "Type": "Spellcaster / Effect",
+        "Type": "Warrior / Effect",
         "Meta": {
-            "ATK": 1200,
-            "DEF": 1300,
+            "ATK": 800,
+            "DEF": 1750,
             "Attribute": "LIGHT",
-            "Effect": "This card is always considered an \u201cOrichalcos\u201d monster. When this card is Normal Summoned, you can Special Summon any number of \u201cInfiltrate of Atlantis\u201d from your hand or Deck; destroy those cards during the End Phase. This card can attack your opponent directly, but when it does for this effect, consider half its ATK during damage calculation."
+            "Effect": "If you control \u201cThe Seal of Orichalcos\u201d, this card can attack your opponent directly. When this card is Normal Summoned, you can Special Summon any amount of \u201cInfiltrate of Atlantis\u201d from your hand or Deck. When you  have 3 \u201cInfiltrate of Atlantis\u201d in your GY, you can banish all 3 cards: Place 1 \u201cWrath\u201d counter on 1 face-up \u201cThe Ruin of Atlantis\u201d you control."
         }
     },
     {
@@ -1317,7 +1317,7 @@ var CARDS_DB =
             "ATK": 200,
             "DEF": 200,
             "Attribute": "DARK",
-            "Effect": "When 1 \u201cOrichalcos\u201d Field Spell you control would leave the field (Quick Effect): discard this card instead. When an opponent's monster declares a direct attack: You can Special Summon this card from your hand, then end the Battle Phase. If you control \u201cThe Seal of Orichalcos\u201d, this card can attack your opponent directly. When this card is Special Summoned from your GY, increase its ATK by 1000 untill the End Phase."
+            "Effect": "When 1 \u201cOrichalcos\u201d Field Spell you control would leave the field (Quick Effect): Discard or Tribute this card instead. Once per turn, cannot be destroyed. This card can attack your opponent directly. When this card is Special Summoned from your GY by the effect of \u201cThe Seal of Orichalcos\u201d, increase its ATK by 1000 untill the End Phase."
         }
     },
     {
