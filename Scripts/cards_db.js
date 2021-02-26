@@ -1161,7 +1161,7 @@ var CARDS_DB =
             "ATK": 0,
             "DEF": 2000,
             "Attribute": "EARTH",
-            "Effect": "2 Level 3 \"Orichalcos\" monsters\nYou don\u2019t take Batle Damage from battles involving this card. Once per turn, during either player\u2019s turn (Quick Effect): You can detatch 1 Xyz Material from this card; target one face-up monster on the field. Untill the End Phase, that monster ATK becomes 0 and cannot be destroyed by battle. "
+            "Effect": "2 Level 3 \"Orichalcos\" monsters\nYou don\u2019t take Battle Damage from battles involving this card. Once per turn, during either player\u2019s turn (Quick Effect): You can detatch 1 Xyz Material from this card; target one face-up monster on the field. Untill the End Phase, that monster ATK becomes 0 and cannot be destroyed by battle. "
         }
     },
     {
