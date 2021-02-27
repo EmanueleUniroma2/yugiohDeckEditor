@@ -137,15 +137,17 @@ body{
 }
 .testable_card{
   width: 2em;
+  cursor: pointer;
 }
 .testable_card_picked{
   width: 3em;
   position: absolute;
+  cursor: pointer;
 }
 .abs_box_label{
   position: absolute;
   background: rgba(255,255,255,0.8);
-  padding: 0 3em;
+  padding: 0 0.3em;
   border: 1px solid;
   margin-top: -1px;
   margin-left: -1px;
@@ -187,7 +189,7 @@ body{
 .field_test_box{
   border: 1px solid;
   min-height: 20em;
-  width: 50%;
+  width: 45%;
   margin: 0 1em;
   display: inline-block;
 }

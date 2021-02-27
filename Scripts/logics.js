@@ -476,6 +476,16 @@ function cardMatchesFilter(card, s_name, s_effect, level, attribute, type){
   return true;
 }
 
+function getCardData(imagePath){
+  for(let i = 0; i < CARDS_DB.length; i++){
+    let card = CARDS_DB[i];
+    if(decodeURI(imagePath).indexOf(card["Img"]) != -1){
+      return card;
+    }
+  }
+  return null;
+}
+
 function filterCards(s_name, s_effect, level, attribute, type) {
 
   let card_filtered = [];
@@ -687,6 +697,9 @@ function pageTestDeck() {
   addDom(makeNode("div","You can drag cards from your Deck or Extra Deck to anywhere on the screen. You can also double click a card to swap status:<ul><li>1: Vertical Clear</li><li>2: Vertical Covered</li><li>3: Horizontal Covered</li><li>4: Horizontal Clear</li></ul>.","infobox"));
   addDom(makeSpace(1));
 
+  addDom(setId(makeNode("div","Card description will appear here","infobox"), "card_test_desc"));
+  addDom(makeSpace(1));
+
   let id = localStorage.getItem("display_name");
 
   if(id != null){
@@ -831,8 +844,20 @@ function makeDragElementMouse(elmnt, header) {
 }
 
 
+function setDescription(node) {
+  let box = document.getElementById("card_test_desc");
+  if(box != null){
+    box.style.whiteSpace = "pre-line";
+    let card = getCardData(node.src);
+    let desc = getCardDescription(card);
+    box.innerHTML = desc;
+  }
+}
+
 var timein = false;
 function doubleClickChangePos(node) {
+
+  setDescription(node)
 
   if(timein){
 
@@ -870,9 +895,11 @@ function pick_card(node) {
   i.src = node.src;
   i.name = "0";
 
+
+
   let cursorX = event.pageX;
   let cursorY = event.pageY;
-
+  i.setAttribute("onmouseover", "setDescription(this)");
   i.setAttribute("onclick", "doubleClickChangePos(this)");
   i.style.top = cursorY - 10;
   i.style.right = window.innerWidth - cursorX  - 20;
