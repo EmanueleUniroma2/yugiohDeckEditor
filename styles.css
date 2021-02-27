@@ -135,6 +135,62 @@ body{
   border: 4px solid transparent;
   cursor: pointer;
 }
+.testable_card{
+  width: 2em;
+}
+.testable_card_picked{
+  width: 3em;
+  position: absolute;
+}
+.abs_box_label{
+  position: absolute;
+  background: rgba(255,255,255,0.8);
+  padding: 0 3em;
+  border: 1px solid;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.hand_test_box{
+  border: 1px solid;
+  min-height: 5em;
+  margin: 1em;
+  width: 92%;
+}
+.gy_test_box{
+  border: 1px solid;
+  min-height: 5em;
+  margin: 1em;
+  width: 92%;
+}
+.banish_test_box{
+  border: 1px solid;
+  min-height: 5em;
+  margin: 1em;
+  width: 92%;
+}
+.extra_deck{
+  border: 1px solid;
+  min-height: 20em;
+  max-height: 20em;
+  width: 20%;
+  display: inline-block;
+  overflow: auto;
+}
+.deck_test_box{
+  border: 1px solid;
+  min-height: 20em;
+  max-height: 20em;
+  width: 20%;
+  display: inline-block;
+  overflow: auto;
+}
+.field_test_box{
+  border: 1px solid;
+  min-height: 20em;
+  width: 50%;
+  margin: 0 1em;
+  display: inline-block;
+}
 .card_in_recipe:hover{
   border: 4px solid rgba(0,0,0,0.6);
 }

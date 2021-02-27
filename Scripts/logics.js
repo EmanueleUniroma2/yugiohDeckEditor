@@ -401,7 +401,16 @@ function pageHome(){
   addDom(makeNode("div","If you print card-backs, when printing select \"Flip on the <strong>short</strong> side of the paper\" to have a perfect back match.","infobox"));
   addDom(makeSpace(1));
 
-  addDom(makeNode("div","Step 3: Generate the Printable PDF","subtitle"));
+  addDom(makeNode("div","Step 3 (optional): Test the behavior of the Deck","subtitle"));
+  addDom(makeSpace(1));
+
+  addDom(makeNode("div","Use the button below to enter to the Test Deck mode. Its a simple tool that simulate drawing cards from the Deck, so you can mimic a game and immagine if it \"could work\" in real life","infobox"));
+  addDom(makeSpace(1));
+
+  addDom(makeButton("Test Deck Mode", "wide_button", gotoTestDeck));
+  addDom(makeSpace(1));
+
+  addDom(makeNode("div","Step 4: Generate the Printable PDF","subtitle"));
   addDom(makeSpace(1));
 
   addDom(makeNode("div","When you are ready, hit the \"Generate Printable Deck Page\" button to see the ready-to-print Deck page. For best results, you must save the whole page by right-clicking the page and printing as PDF. Remember to use A4 format and no margins.","infobox"));
@@ -660,6 +669,228 @@ function gotoProcess() {
   setNavigation("printable_deck");
 }
 
+function gotoTestDeck() {
+  let deck_name = document.getElementById("chosen_id").value;
+  localStorage.setItem("display_name", deck_name);
+  setNavigation("test_deck");
+}
+
+
+function pageTestDeck() {
+
+  addDom(makeBackTitle("Test the Deck"));
+  addDom(makeSpace(1));
+
+  addDom(makeNode("div","Use the boxes below to simulate a game","subtitle"));
+  addDom(makeSpace(1));
+
+  addDom(makeNode("div","You can drag cards from your Deck or Extra Deck to anywhere on the screen. You can also double click a card to swap status:<ul><li>1: Vertical Clear</li><li>2: Vertical Covered</li><li>3: Horizontal Covered</li><li>4: Horizontal Clear</li></ul>.","infobox"));
+  addDom(makeSpace(1));
+
+  let id = localStorage.getItem("display_name");
+
+  if(id != null){
+    let deck = getDeckByName(id);
+    if(deck.length > 0){
+
+      let only_deck = [];
+      let only_extra = [];
+      for(let i = 0; i < deck.length; i++){
+        if(deck[i].type == "Deck"){
+          for(let j = 0; j < deck[i].amount; j++){
+            only_deck.push(deck[i].name);
+          }
+        }
+        if(deck[i].type == "Extra Deck"){
+          for(let j = 0; j < deck[i].amount; j++){
+            only_extra.push(deck[i].name);
+          }
+        }
+      }
+
+      only_deck.sort((a, b) => {
+        return 0.5 - Math.random();
+      });
+      only_extra.sort((a, b) => {
+        return 0.5 - Math.random();
+      });
+
+      let extr_zone = makeNode("div","<div class=\"abs_box_label\">Extra Deck</div>","extra_deck deck_test_box");
+      addDom(extr_zone);
+      let deck_zone = makeNode("div","<div class=\"abs_box_label\">Deck</div>", "deck_test_box");
+      addDom(makeNode("div","<div class=\"abs_box_label\">Field</div>", "field_test_box"));
+      addDom(deck_zone);
+      /*
+      addDom(makeNode("div","<div class=\"abs_box_label\">Hand</div>", "hand_test_box"));
+      addDom(makeNode("div","<div class=\"abs_box_label\">Graveyard</div>", "gy_test_box"));
+      addDom(makeNode("div","<div class=\"abs_box_label\">Banished</div>", "banish_test_box"));
+      */
+      for(let i = 0; i < only_deck.length; i++){
+        deck_zone.appendChild(addTestableCard(only_deck[i], i));
+      }
+      for(let i = 0; i < only_extra.length; i++){
+        extr_zone.appendChild(addTestableCard(only_extra[i], i));
+      }
+    }
+  }
+}
+
+// CREDITS: https://www.w3schools.com/howto/howto_js_draggable.asp
+function makeDragElement(elmnt, header) {
+    makeDragElementTouch(elmnt, header);
+    makeDragElementMouse(elmnt, header);
+}
+
+function makeDragElementTouch(elmnt, header) {
+
+    var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+
+    // move the DIV from the header
+    header.ontouchstart = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        // get the touch position at startup:
+        pos3 = e.touches[0].clientX;
+        pos4 = e.touches[0].clientY;
+        document.ontouchend = closeDragElement;
+
+        // call a function whenever the touch moves
+        document.ontouchmove = elementDrag;
+
+        document.body.style.overflow = "hidden";
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        // calculate the new cursor position:
+        pos1 = pos3 - e.touches[0].clientX;
+        pos2 = pos4 - e.touches[0].clientY;
+        pos3 = e.touches[0].clientX;
+        pos4 = e.touches[0].clientY;
+
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        let r = +((elmnt.style.right).split("px")[0]);
+        elmnt.style.right = (r + pos1).toString() + "px";
+    }
+
+    function closeDragElement() {
+        // stop moving when touch is released:
+        document.ontouchend = null;
+        document.ontouchmove = null;
+
+        document.body.style.overflow = "auto";
+    }
+}
+
+
+function makeDragElementMouse(elmnt, header) {
+
+    var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+
+    // move the DIV from the header
+    header.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        let r = +((elmnt.style.right).split("px")[0]);
+        elmnt.style.right = (r + pos1).toString() + "px";
+    }
+
+    function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+
+var timein = false;
+function doubleClickChangePos(node) {
+
+  if(timein){
+
+    let n = +node.name + 1;
+    if(n > 3){
+      node.name = "0";
+    }else{
+      node.name = n.toString();
+    }
+
+    if(node.name == "0"){
+      node.style.opacity = "";
+      node.style.transform = "";
+    }
+    else if(node.name == "1"){
+      node.style.opacity = 0.3;
+    }
+    else if(node.name == "2"){
+      node.style.opacity = 0.3;
+      node.style.transform = "rotate(-90deg)";
+    }
+    else{
+      node.style.opacity = "";
+      node.style.transform = "rotate(-90deg)";
+    }
+
+  }else{
+    timein = true;
+  }
+  setTimeout(()=>{ timein = false;},300);
+}
+
+function pick_card(node) {
+  let i = makeNode("img", "", "testable_card_picked");
+  i.src = node.src;
+  i.name = "0";
+
+  let cursorX = event.pageX;
+  let cursorY = event.pageY;
+
+  i.setAttribute("onclick", "doubleClickChangePos(this)");
+  i.style.top = cursorY - 10;
+  i.style.right = window.innerWidth - cursorX  - 20;
+
+  makeDragElement(i,i);
+
+  node.parentNode.removeChild(node);
+  document.body.appendChild(i);
+
+}
+
+function addTestableCard(path, index) {
+  let i = makeNode("img", "", "testable_card");
+  i.src = "./Core_All_Cards/"+ path + ".png";
+  i.setAttribute("onclick", "pick_card(this)");
+  return i;
+}
+
 
 function pageCreateDeck() {
 
@@ -774,6 +1005,10 @@ function pageNavigate() {
     }
     if (page_no_args == "printable_deck") {
         pagePrintableDeck();
+        return;
+    }
+    if (page_no_args == "test_deck"){
+        pageTestDeck();
         return;
     }
 
