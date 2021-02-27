@@ -109,6 +109,15 @@ body{
   max-width: 30em;
 }
 
+.infobox_wide{
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 0.5em 1em;
+  background: rgba(0,0,0,0.1);
+  white-space : pre-line;
+  min-height : 15em;
+  max-width : 85%;
+}
+
 .print_deck_button{
   position: absolute;
   left: 4em;

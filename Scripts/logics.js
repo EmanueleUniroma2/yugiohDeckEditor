@@ -697,7 +697,7 @@ function pageTestDeck() {
   addDom(makeNode("div","You can drag cards from your Deck or Extra Deck to anywhere on the screen. You can also double click a card to swap status:<ul><li>1: Vertical Clear</li><li>2: Vertical Covered</li><li>3: Horizontal Covered</li><li>4: Horizontal Clear</li></ul>.","infobox"));
   addDom(makeSpace(1));
 
-  addDom(setId(makeNode("div","Card description will appear here","infobox"), "card_test_desc"));
+  addDom(setId(makeNode("div","Card description will appear here","infobox_wide"), "card_test_desc"));
   addDom(makeSpace(1));
 
   let id = localStorage.getItem("display_name");
@@ -847,7 +847,7 @@ function makeDragElementMouse(elmnt, header) {
 function setDescription(node) {
   let box = document.getElementById("card_test_desc");
   if(box != null){
-    box.style.whiteSpace = "pre-line";
+
     let card = getCardData(node.src);
     let desc = getCardDescription(card);
     box.innerHTML = desc;
